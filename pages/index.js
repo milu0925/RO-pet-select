@@ -8,21 +8,11 @@ export default function Home() {
   const [two, setTwo] = useState([]); // 兩ㄍ
   const [three, setThree] = useState([]); //三ㄍ
 
-  //計算數量
-  const countMap1 = empty1.reduce((acc, item) => {
-    acc[item] = (acc[item] || 0) + 1;
-    return acc;
-  }, {});
-  const countMap2 = empty2.reduce((acc, item) => {
-    acc[item] = (acc[item] || 0) + 1;
-    return acc;
-  }, {});
-  const countMap3 = empty3.reduce((acc, item) => {
-    acc[item] = (acc[item] || 0) + 1;
-    return acc;
-  }, {});
-
   useEffect(() => {
+    const countMap1 = empty1.reduce((acc, item) => {
+      acc[item] = (acc[item] || 0) + 1;
+      return acc;
+    }, {});
     Object.entries(countMap1).forEach(([key, count]) => {
       if (count >= 3) {
         setThree((prev) => {
@@ -48,6 +38,10 @@ export default function Home() {
     });
   }, [empty1]);
   useEffect(() => {
+    const countMap2 = empty2.reduce((acc, item) => {
+      acc[item] = (acc[item] || 0) + 1;
+      return acc;
+    }, {});
     Object.entries(countMap2).forEach(([key, count]) => {
       if (count >= 3) {
         setThree((prev) => {
@@ -73,6 +67,10 @@ export default function Home() {
     });
   }, [empty2]);
   useEffect(() => {
+    const countMap3 = empty3.reduce((acc, item) => {
+      acc[item] = (acc[item] || 0) + 1;
+      return acc;
+    }, {});
     Object.entries(countMap3).forEach(([key, count]) => {
       if (count >= 3) {
         setThree((prev) => {
@@ -103,31 +101,35 @@ export default function Home() {
       <RO />
       <div className="box">
         [
-        {empty1.map((v) => (
-          <span>{`${v}`}</span>
+        {empty1.map((v, i) => (
+          <span key={i}>{v}</span>
         ))}
         ]
       </div>
       <div className="box">
         [
-        {empty2.map((v) => (
-          <span>{`${v}`}</span>
+        {empty2.map((v, i) => (
+          <span key={i}>{v}</span>
         ))}
         ]
       </div>
       <div className="box">
         [
-        {empty3.map((v) => (
-          <span>{`${v}`}</span>
+        {empty3.map((v, i) => (
+          <span key={i}>{v}</span>
         ))}
         ]
       </div>
       <div className="sblock">
-        {two.map((item) => (
-          <div className="skill">{skill2[item]}</div>
+        {two.map((item, i) => (
+          <div key={i} className="skill">
+            {skill2[item]}
+          </div>
         ))}
-        {three.map((item) => (
-          <div className="skill">{skill3[item]}</div>
+        {three.map((item, i) => (
+          <div key={i} className="skill">
+            {skill3[item]}
+          </div>
         ))}
       </div>
     </>

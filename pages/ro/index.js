@@ -6,7 +6,7 @@ export default function RO() {
   return (
     <div className="flex">
       {Object.entries(data).map(([key, values], index) => (
-        <Hff index={index} name={key} value={values} />
+        <Hff key={index} index={index} name={key} value={values} />
       ))}
     </div>
   );
