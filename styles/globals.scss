@@ -1,0 +1,36 @@
+body {
+  color: blueviolet;
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  transform: scale(1.2);
+  background: rebeccapurple;
+  accent-color: rebeccapurple;
+}
+
+label {
+  font-size: 16px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.center {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.box {
+  margin: 2rem;
+  span {
+    padding-inline: 3px;
+  }
+}
+
+.sblock {
+  .skill {
+  }
+}
