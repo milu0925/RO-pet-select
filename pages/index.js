@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import RO from "./ro";
-import { skill2, skill3 } from "./ro/ro";
+import { skill2, skill3 } from "../component/ro";
 import { useCheck } from "@/hook/check-context";
 export default function Home() {
   const { empty1, empty2, empty3 } = useCheck();

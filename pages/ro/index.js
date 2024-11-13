@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { data } from "./ro";
-import Hff from "./button";
+import { data } from "../../component/ro";
+import Hff from "../../component/button";
 
 export default function RO() {
   return (
