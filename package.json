@@ -1,17 +1,15 @@
 {
-  "name": "hhhhh",
+  "name": "roo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 6969",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "fs": "^0.0.1-security",
     "next": "14.2.4",
-    "path": "^0.12.7",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.80.7"
