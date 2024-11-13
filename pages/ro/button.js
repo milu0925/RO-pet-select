@@ -4,7 +4,10 @@ export default function Hff(prop) {
   const { aid, handlepush } = useCheck();
 
   return (
-    <div className="center">
+    <label htmlFor={prop.name} className="center">
+      {/* <img src={`/images/${prop.name}.png`} /> */}
+      <img src={`/images/w.jpg`} />
+      <div>{prop.name}</div>
       <input
         id={prop.name}
         type="checkbox"
@@ -13,7 +16,6 @@ export default function Hff(prop) {
           handlepush(event, prop);
         }}
       />
-      <label htmlFor={prop.name}>{prop.index}</label>
-    </div>
+    </label>
   );
 }

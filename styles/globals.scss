@@ -3,24 +3,34 @@ body {
 }
 
 input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   transform: scale(1.2);
   background: rebeccapurple;
   accent-color: rebeccapurple;
 }
-
 label {
-  font-size: 16px;
+  font-size: 14px;
 }
 .flex {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-.center {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  gap: 12px;
+  .center {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgb(206, 206, 206);
+    overflow: hidden;
+    img {
+      width: 100%;
+      max-width: 80px;
+    }
+  }
 }
 
 .box {
