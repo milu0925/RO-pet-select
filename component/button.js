@@ -6,8 +6,8 @@ export default function Hff(prop) {
 
   return (
     <label htmlFor={prop.name} className="center">
-      {/* <img alt="image" src={`/images/${prop.name}.png`} /> */}
-      <Image src={`/images/w.jpg`} alt="image" width={100} height={100} />
+      <img alt="image" src={`/images/${prop.name}.png`} />
+      {/* <Image src={`/images/w.jpg`} alt="image" width={100} height={100} /> */}
       <div>{prop.name}</div>
       <input
         id={prop.name}
