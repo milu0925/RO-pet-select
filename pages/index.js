@@ -3,7 +3,7 @@ import RO from "./ro";
 import { skill2, skill3 } from "../component/ro";
 import { useCheck } from "@/hook/check-context";
 export default function Home() {
-  const { empty1, empty2, empty3 } = useCheck();
+  const { aid, empty1, empty2, empty3 } = useCheck();
 
   const [two, setTwo] = useState([]); // 兩ㄍ
   const [three, setThree] = useState([]); //三ㄍ
@@ -98,28 +98,28 @@ export default function Home() {
 
   return (
     <>
-      <RO />
-      <div className="box">
-        [
+      {/* 列表 */}
+      <div className="grid">
+        {aid.map((v, i) => (
+          <span key={i}>{v}</span>
+        ))}
+      </div>
+      <div className="grid">
         {empty1.map((v, i) => (
           <span key={i}>{v}</span>
         ))}
-        ]
       </div>
-      <div className="box">
-        [
+      <div className="grid">
         {empty2.map((v, i) => (
           <span key={i}>{v}</span>
         ))}
-        ]
       </div>
-      <div className="box">
-        [
+      <div className="grid">
         {empty3.map((v, i) => (
           <span key={i}>{v}</span>
         ))}
-        ]
       </div>
+      {/* 技能 */}
       <div className="sblock">
         {two.map((item, i) => (
           <div key={i} className="skill">
@@ -132,6 +132,8 @@ export default function Home() {
           </div>
         ))}
       </div>
+
+      <RO />
     </>
   );
 }
