@@ -3,7 +3,7 @@ import RO from "./ro";
 import { skill2, skill3 } from "../component/ro";
 import { useCheck } from "@/hook/check-context";
 export default function Home() {
-  const { aid, empty1, empty2, empty3 } = useCheck();
+  const { aid, empty1, empty2, empty3, empty4 } = useCheck();
 
   const [two, setTwo] = useState([]); // 兩ㄍ
   const [three, setThree] = useState([]); //三ㄍ
@@ -95,42 +95,75 @@ export default function Home() {
       }
     });
   }, [empty3]);
+  useEffect(() => {
+    const countMap4 = empty4.reduce((acc, item) => {
+      acc[item] = (acc[item] || 0) + 1;
+      return acc;
+    }, {});
+    Object.entries(countMap4).forEach(([key, count]) => {
+      if (count >= 3) {
+        setThree((prev) => {
+          if (!prev.includes(key)) {
+            return [...prev, key];
+          }
+          return prev;
+        });
+      } else {
+        setThree((prev) => prev.filter((item) => item !== key));
+      }
+
+      if (count === 2) {
+        setTwo((prev) => {
+          if (!prev.includes(key)) {
+            return [...prev, key];
+          }
+          return prev;
+        });
+      } else {
+        setTwo((prev) => prev.filter((item) => item !== key));
+      }
+    });
+  }, [empty4]);
 
   return (
     <>
-      {/* 列表 */}
-      <div className="grid">
-        {aid.map((v, i) => (
-          <span key={i}>{v}</span>
-        ))}
-      </div>
-      <div className="grid">
-        {empty1.map((v, i) => (
-          <span key={i}>{v}</span>
-        ))}
-      </div>
-      <div className="grid">
-        {empty2.map((v, i) => (
-          <span key={i}>{v}</span>
-        ))}
-      </div>
-      <div className="grid">
-        {empty3.map((v, i) => (
-          <span key={i}>{v}</span>
-        ))}
-      </div>
-      {/* 技能 */}
-      <div className="sblock">
-        {two.map((item, i) => (
-          <div key={i} className="skill">
-            {skill2[item]}
-          </div>
-        ))}
-        {three.map((item, i) => (
-          <div key={i} className="skill">
-            {skill3[item]}
-          </div>
-        ))}
+      <div className="titblock">
+        {/* 列表 */}
+        <div>您出陣的寵物</div>
+        <div className="grid">
+          {aid.map((v, i) => (
+            <span key={i}>{v}</span>
+          ))}
+        </div>
+        <div className="grid">
+          {empty1.map((v, i) => (
+            <span key={i}>{v}</span>
+          ))}
+        </div>
+        <div className="grid">
+          {empty2.map((v, i) => (
+            <span key={i}>{v}</span>
+          ))}
+        </div>
+        <div className="grid">
+          {empty3.map((v, i) => (
+            <span key={i}>{v}</span>
+          ))}
+        </div>
+        {/* 技能 */}
+        <div>您獲得的加成</div>
+        <div className="sblock">
+          {two.map((item, i) => (
+            <div key={i} className="skill">
+              {skill2[item]}
+            </div>
+          ))}
+          {three.map((item, i) => (
+            <div key={i} className="skill">
+              {skill3[item]}
+            </div>
+          ))}
+        </div>
       </div>
 
       <RO />

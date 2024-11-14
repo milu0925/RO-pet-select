@@ -38,11 +38,9 @@ label {
   grid-template-columns: repeat(5, 1fr);
   text-align: center;
   border: 1px solid rgb(158, 158, 158);
+  min-height: 50px;
 }
 
-.box {
-  margin: 2rem;
-  span {
-    padding-inline: 3px;
-  }
+.sblock {
+  min-height: 50px;
 }
