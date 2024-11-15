@@ -1,9 +1,11 @@
 import React from "react";
-import WildBeast from "./wild-beast";
+import LayoutMain from "@/component/layout/background";
+
 export default function Home() {
   return (
-    <div>
-      <WildBeast />
-    </div>
+    <LayoutMain>
+      <div></div>
+      <div></div>
+    </LayoutMain>
   );
 }

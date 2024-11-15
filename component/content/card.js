@@ -5,9 +5,15 @@ export default function Card(prop) {
   const { aid, handlepush } = useCheck();
 
   return (
-    <label htmlFor={prop.name} className="center">
+    <label htmlFor={prop.name} className="black-block monster">
       <img alt="image" src={`/images/${prop.name}.png`} />
-      <div>{prop.name}</div>
+
+      <div className="prop">
+        <span>暗</span>
+        <span>五</span>
+        <span>時區</span>
+      </div>
+      <div className="black-block title">{prop.name}</div>
       <input
         id={prop.name}
         type="checkbox"
