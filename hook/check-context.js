@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, {
   createContext,
   useState,
@@ -12,7 +13,7 @@ export const CheckContext = ({ children }) => {
   const [index, setIndex] = useState(0); //要移除的位置
 
   const [check, setCheck] = useState(false); //是否選擇
-  const [prop, setProp] = useState({ value: [] }); //選擇到的
+  const [prop, setProp] = useState({ key: "", value: [] }); //選擇到的
 
   const [empty1, setempty1] = useState([]);
   const [empty2, setempty2] = useState([]);
@@ -53,29 +54,28 @@ export const CheckContext = ({ children }) => {
       }
     }
   };
-
-  const handlepush = (event, prop) => {
+  const handlepush = (event, key, value) => {
     const { checked } = event.target;
     setCheck(checked);
     // 名子為唯一值判定
     if (checked) {
       setaid((prev) => {
-        if (prev.length < 5 && !prev.includes(prop.name)) {
-          return [...prev, prop.name];
+        if (prev.length < 5 && !prev.includes(key)) {
+          return [...prev, key];
         }
         return prev;
       });
-      setProp(prop);
+      setProp({ key, value });
     } else {
       setaid((prev) =>
         prev.filter((item, index) => {
-          if (item == prop.name) {
+          if (item == key) {
             setIndex(index);
           }
-          return item !== prop.name;
+          return item !== key;
         })
       );
-      setProp(prop);
+      setProp({ key, value });
     }
   };
 

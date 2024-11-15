@@ -1,29 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoSearch } from "react-icons/io5";
 import { IoIosListBox } from "react-icons/io";
+import { useSelect } from "@/hook/select-context";
 export default function NavButton() {
-  const [active, setActive] = useState("monster");
+  const { activePage, setactivePage } = useSelect();
+
+  const handleRouter = (e) => {
+    const text = e.currentTarget.name;
+    setactivePage(text);
+  };
 
   return (
     <div className="nav">
       <button
         className={`black-block nav-btn ${
-          active === "monster" ? "active" : ""
+          activePage === "monster" ? "active" : ""
         }`}
         name="monster"
-        onClick={(e) => {
-          setActive(e.currentTarget.name);
-        }}
+        onClick={handleRouter}
       >
         <IoSearch />
         {/* <i className="icon-monster"></i> */}
       </button>
       <button
-        className={`black-block nav-btn ${active === "fight" ? "active" : ""}`}
+        className={`black-block nav-btn ${
+          activePage === "fight" ? "active" : ""
+        }`}
         name="fight"
-        onClick={(e) => {
-          setActive(e.currentTarget.name);
-        }}
+        onClick={handleRouter}
       >
         <IoIosListBox />
         {/* <i className="icon-fight"></i> */}

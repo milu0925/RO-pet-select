@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { skill2, skill3 } from "../json/ro";
 import { useCheck } from "@/hook/check-context";
-import { data } from "../json/ro";
 
 export default function SkillList() {
   const { aid, empty1, empty2, empty3, empty4 } = useCheck();
