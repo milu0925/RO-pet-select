@@ -35,7 +35,7 @@ export const SelectContext = ({ children }) => {
   };
 
   // 切頁
-  const [activePage, setactivePage] = useState("monster");
+  const [activePage, setactivePage] = useState("fight");
   const router = useRouter();
   useEffect(() => {
     router.push(`/${activePage}`);
