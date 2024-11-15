@@ -15,45 +15,36 @@ export const CheckContext = ({ children }) => {
   const [check, setCheck] = useState(false); //是否選擇
   const [prop, setProp] = useState({ key: "", value: [] }); //選擇到的
 
-  const [empty1, setempty1] = useState([]);
-  const [empty2, setempty2] = useState([]);
-  const [empty3, setempty3] = useState([]);
-  const [empty4, setempty4] = useState([]);
+  const [empty, setempty] = useState({ block1: [], block2: [], block3: [] });
 
-  const update = (array1, array2, array3, type, array4) => {
-    if (type === "add") {
-      setempty1(() => [...empty1, array1]);
-      setempty2(() => [...empty2, array2]);
-      setempty3(() => [...empty3, array3]);
+  const update = (array1, array2, array3, type) => {
+    if (type === "remove") {
+      setempty((prev) => {
+        const newBlock1 = [...empty.block1];
+        const newBlock2 = [...empty.block2];
+        const newBlock3 = [...empty.block3];
 
-      if (array4) {
-        setempty4(() => [...empty4, array4]);
-      }
-    } else {
-      setempty1(() => {
-        const newd = [...empty1];
-        newd.splice(index, 1);
-        return newd;
+        newBlock1.splice(index, 1);
+        newBlock2.splice(index, 1);
+        newBlock3.splice(index, 1);
+
+        return {
+          ...prev,
+          block1: newBlock1,
+          block2: newBlock2,
+          block3: newBlock3,
+        };
       });
-      setempty2(() => {
-        const newd = [...empty2];
-        newd.splice(index, 1);
-        return newd;
-      });
-      setempty3(() => {
-        const newd = [...empty3];
-        newd.splice(index, 1);
-        return newd;
-      });
-      if (array4) {
-        setempty4(() => {
-          const newd = [...empty4];
-          newd.splice(index, 1);
-          return newd;
-        });
-      }
+    } else if (type === "add") {
+      setempty(() => ({
+        ...empty,
+        block1: [...empty.block1, array1],
+        block2: [...empty.block2, array2],
+        block3: [...empty.block3, array3],
+      }));
     }
   };
+
   const handlepush = (event, key, value) => {
     const { checked } = event.target;
     setCheck(checked);
@@ -79,17 +70,28 @@ export const CheckContext = ({ children }) => {
     }
   };
 
+  // 刪除單一項目
+  const handleDeleteMonster = (key) => {
+    setaid((prev) =>
+      prev.filter((item, index) => {
+        if (item == key) {
+          setIndex(index);
+        }
+        return item !== key;
+      })
+    );
+    setProp({
+      key,
+      value: [empty.block1[index], empty.block2[index], empty.block3[index]],
+    });
+    setCheck(false);
+  };
+
   useEffect(() => {
     if (check) {
-      update(prop.value[0], prop.value[1], prop.value[2], "add", prop.value[3]);
+      update(prop.value[0], prop.value[1], prop.value[2], "add");
     } else {
-      update(
-        prop.value[0],
-        prop.value[1],
-        prop.value[2],
-        "remove",
-        prop.value[3]
-      );
+      update(prop.value[0], prop.value[1], prop.value[2], "remove");
     }
   }, [aid]);
 
@@ -97,11 +99,9 @@ export const CheckContext = ({ children }) => {
     <CreateCheck.Provider
       value={{
         aid,
-        empty1,
-        empty2,
-        empty3,
-        empty4,
+        empty,
         handlepush,
+        handleDeleteMonster,
       }}
     >
       {children}

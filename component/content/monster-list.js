@@ -9,7 +9,7 @@ export default function ContentMonsterList() {
         <Select />
         <Select />
       </div>
-      <div className="bottom">列表</div>
+      <div className="bottom">尚未製作</div>
     </div>
   );
 }
