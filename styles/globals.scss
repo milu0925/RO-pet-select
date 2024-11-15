@@ -93,7 +93,8 @@ body {
           position: relative;
           cursor: pointer;
           .option {
-            width: 294px;
+            // width: 294px;
+            width: 15vw;
             height: calc(75px - 5px * 2);
             display: flex;
             justify-content: space-between;
@@ -171,7 +172,6 @@ body {
           background: #f1f1f1; /* 背景顏色 */
           border-radius: 8px; /* 背景圓角 */
         }
-
         &::-webkit-scrollbar-thumb:hover {
           background-color: #45a049; /* 滑塊顏色懸停 */
         }
@@ -181,7 +181,8 @@ body {
   .layout-bg-right {
     flex-shrink: 0;
     background: rgb(var(--accent-color));
-    width: 476px;
+    // width: 476px;
+    width: 24.6vw;
     position: relative;
     padding: 41px;
     display: flex;
@@ -200,7 +201,8 @@ body {
           font-size: 70px;
         }
         &.active {
-          width: 246px;
+          // width: 246px;
+          width: 12vw;
         }
       }
     }
@@ -303,149 +305,91 @@ body {
   }
 }
 
-// @media screen and (max-width: 1650px) {
-//   .layout-block {
-//     .layout-bg-left {
-//       .content {
-//         .top {
-//           .select {
-//             .option {
-//               width: 15vw;
-//               height: calc(75px - 5px * 2);
-//               padding: 5px 20px;
-//               font-size: 30px;
-//               border-radius: 50px;
-//               span {
-//                 letter-spacing: 3px;
-//               }
-//               i {
-//                 font-size: 40px;
-//               }
-//             }
-//             .s-content {
-//               position: absolute;
-//               z-index: 5;
-//               top: 62px;
-//               width: 97%;
-//               display: flex;
-//               flex-direction: column;
-//               border-radius: none;
-//               div {
-//                 height: 30px;
-//                 padding: 5px 20px;
-//                 display: flex;
-//                 align-items: center;
-//                 justify-content: center;
-//                 border-radius: 50px;
-//                 &:hover {
-//                   background: rgb(var(--pink));
-//                   border-radius: 0px;
-//                   &:first-child {
-//                     border-radius: 12px 12px 0 0;
-//                   }
-//                   &:last-child {
-//                     border-radius: 0 0 12px 12px;
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//           .question {
-//             cursor: pointer;
-//             position: relative;
-//             z-index: 3;
-//             width: 80px;
-//             height: 80px;
-//             border-radius: 50%;
-//             border: 3px solid black;
-//             background: #4459a8;
-//             margin-left: auto;
-//             margin-right: 120px;
-//             i {
-//               font-size: 36px;
-//             }
-//           }
-//         }
-//         .bottom {
-//           position: relative;
-//           z-index: 1;
-//           height: calc(100vh - 80px - 2rem * 2);
-//           overflow-y: auto;
-//           padding-bottom: 4rem;
-//           &::-webkit-scrollbar {
-//             width: 12px;
-//           }
-//           &::-webkit-scrollbar-thumb {
-//             background-color: #719ad0; /* 滑塊顏色 */
-//             border-radius: 4px; /* 滑塊圓角 */
-//             border: 2px solid #ddd; /* 滑塊邊框 */
-//           }
-//           &::-webkit-scrollbar-track {
-//             background: #f1f1f1; /* 背景顏色 */
-//             border-radius: 8px; /* 背景圓角 */
-//           }
+@media screen and (max-width: 576px) {
+  .layout-block {
+    .layout-bg-right {
+      display: none;
+    }
+    .layout-bg-left {
+      .content {
+        padding-inline: 1rem;
+        .top {
+          .select {
+            .option {
+              width: 100%;
+              height: auto;
+              padding: 16px;
+              font-size: 24px;
+              border-radius: 0;
+              span {
+                letter-spacing: 0;
+              }
+              i {
+                font-size: 30px;
+              }
+            }
+            .s-content {
+            }
+          }
+        }
+        .bottom {
+          &::-webkit-scrollbar {
+            display: none;
+          }
+          height: 100vh; //重新計算一下總高
+          align-items: center;
+        }
+      }
+    }
+  }
+  .mobile-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 85px 70px auto;
+    grid-template-rows: 70px 75px 75px 75px;
+    grid-template-areas:
+      "nav list content"
+      "select1 select1 content"
+      "select2 select2 content"
+      "select3 select3 content";
 
-//           &::-webkit-scrollbar-thumb:hover {
-//             background-color: #45a049; /* 滑塊顏色懸停 */
-//           }
-//         }
-//       }
-//     }
-//     .layout-bg-right {
-//       flex-shrink: 0;
-//       background: rgb(var(--accent-color));
-//       width: 476px;
-//       position: relative;
-//       padding: 41px;
-//       display: flex;
-//       flex-direction: column;
-//       gap: 1.5rem;
-//       .nav {
-//         width: 100%;
-//         display: flex;
-//         .nav-btn {
-//           flex-grow: 1;
-//           cursor: pointer;
-//           height: 150px;
-//           border-radius: 3px;
-//           transition: all 0.5s ease-in-out;
-//           svg {
-//             font-size: 70px;
-//           }
-//           &.active {
-//             width: 246px;
-//           }
-//         }
-//       }
-//       .pet-select-list {
-//         > div {
-//           &:nth-child(odd) {
-//             background-color: rgba(var(--primary-color), 0.5);
-//           }
-//           &:nth-child(even) {
-//             background-color: rgba(var(--primary-color), 0.2);
-//           }
-//           &:first-child {
-//             background-color: rgb(var(--primary-color));
-//             border-radius: 12px 12px 0 0;
-//           }
-//         }
-//         span {
-//           position: relative;
-//           .cancle {
-//             cursor: pointer;
-//             position: absolute;
-//             top: -10px;
-//             right: 0;
-//           }
-//         }
-//       }
-//       .skill {
-//         flex-grow: 1;
-//         padding: 16px;
-//         line-height: 2;
-//         background-color: rgb(var(--body));
-//       }
-//     }
-//   }
-// }
+    .m-nav {
+      grid-area: nav;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+    }
+
+    .m-list-btn {
+      grid-area: list;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 35px;
+    }
+    .m-select1 {
+      grid-area: select1;
+      cursor: pointer;
+    }
+    .m-select2 {
+      grid-area: select2;
+      cursor: pointer;
+    }
+    .m-select3 {
+      grid-area: select3;
+      cursor: pointer;
+    }
+    .m-content {
+      grid-area: content;
+      padding: 16px;
+      line-height: 1.8;
+    }
+  }
+  .monster {
+    width: 43vw;
+    margin-right: 0;
+  }
+}
