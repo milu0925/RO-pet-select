@@ -288,8 +288,10 @@ body {
     padding-block: 1rem;
     display: flex;
     gap: 6px;
-    font-size: 8px;
+    font-size: 12px;
+    
     span {
+      font-family: Georgia, 'Times New Roman', Times, serif;
       color: white;
       width: 35px;
       height: 15px;
@@ -399,7 +401,7 @@ body {
   top: 0;
   left: 0;
   z-index: 5;
-  width: 90%;
+  width: 95%;
   height: 650px;
   padding: 2rem;
   > button {
@@ -412,5 +414,9 @@ body {
     svg {
       font-size: 80px;
     }
+  }
+  .skill-list{
+    display: flex;
+    justify-content: space-between;
   }
 }

@@ -19,8 +19,6 @@ export default function FightPet() {
     };
   }, []);
 
-  console.log(skill2);
-  
 
   const [openQuestion, setOpenQuestion] = useState(false);
   return (
@@ -55,9 +53,12 @@ export default function FightPet() {
             >
               <FaDeleteLeft />
             </button>
-            <div>
-              {Object.entries(skill2).map(([key,values],i)=>(<div key={i}>{key} : {values}</div>))}
-              {/* {Object.entries(skill3).map(([key,values],i)=>(<div key={i}>{key} : {values}</div>))} */}
+            <div className="skill-list">
+              <div>
+              <div>上陣兩隻同樣屬性寵物</div>
+              <hr />
+              {Object.entries(skill2).map(([key,values],i)=>(<div key={i}>{key} : {values}</div>))}</div>
+              <div><div>上陣三隻同樣屬性寵物</div><hr />{Object.entries(skill3).map(([key,values],i)=>(<div key={i}>{key} : {values}</div>))}</div>
             </div>
           </div>
         ) : (
