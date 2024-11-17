@@ -19,6 +19,21 @@ export default function Select({ names, list }) {
     setselectName(value);
     setIsOpen(false);
   };
+  const handleDelete = ()=>{
+    const updatedSelects = [...selects];
+    if (names === "props") {
+      updatedSelects[0] = "";
+      setselects(updatedSelects);
+    } else if (names === "shape") {
+      updatedSelects[1] = "";
+      setselects(updatedSelects);
+    } else if (names === "ethnicity") {
+      updatedSelects[2] = "";
+      setselects(updatedSelects);
+    }
+    setselectName("請選擇");
+    setIsOpen(false);
+  }
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -31,17 +46,23 @@ export default function Select({ names, list }) {
         </i>
       </div>
       <div className={`s-content ${isOpen ? "black-block" : ""}`} name={names}>
-        {isOpen
-          ? list.map((v) => (
+        {isOpen ? (
+          <>
+            <div onClick={handleDelete}>不選擇</div>
+            {list.map((v, index) => (
               <div
+                key={index} 
                 onClick={() => {
                   handleSelect(v);
                 }}
               >
                 {v}
               </div>
-            ))
-          : ""}
+            ))}
+          </>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

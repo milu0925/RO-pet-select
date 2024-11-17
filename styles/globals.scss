@@ -393,3 +393,24 @@ body {
     margin-right: 0;
   }
 }
+
+.question-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 90%;
+  height: 650px;
+  padding: 2rem;
+  > button {
+    cursor: pointer;
+    position: absolute;
+    right: -60px;
+    top: -15px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    svg {
+      font-size: 80px;
+    }
+  }
+}
