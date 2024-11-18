@@ -1,7 +1,7 @@
 import { useSelect } from "@/hook/select-context";
 import React, { useState } from "react";
 
-export default function Select({ names, list }) {
+export default function Select({ names, list, question }) {
   const { selects, setselects } = useSelect();
   const [selectName, setselectName] = useState("");
   const handleSelect = (value) => {
@@ -15,11 +15,20 @@ export default function Select({ names, list }) {
     } else if (names === "ethnicity") {
       updatedSelects[2] = value;
       setselects(updatedSelects);
+    } else if (names === "material") {
+      updatedSelects[5] = value;
+      setselects(updatedSelects);
+    } else if (names === "profession") {
+      updatedSelects[3] = value;
+      setselects(updatedSelects);
+    } else if (names === "rank") {
+      updatedSelects[4] = value;
+      setselects(updatedSelects);
     }
     setselectName(value);
     setIsOpen(false);
   };
-  const handleDelete = ()=>{
+  const handleDelete = () => {
     const updatedSelects = [...selects];
     if (names === "props") {
       updatedSelects[0] = "";
@@ -33,13 +42,13 @@ export default function Select({ names, list }) {
     }
     setselectName("請選擇");
     setIsOpen(false);
-  }
+  };
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="select">
       <div className="black-block option" onClick={() => setIsOpen(!isOpen)}>
-        <span>{selectName ? selectName : "請選擇"}</span>
+        <span>{selectName ? selectName : question}</span>
         <i className="icon-select">
           <i className="path1"></i>
           <i className="path2"></i>
@@ -51,7 +60,7 @@ export default function Select({ names, list }) {
             <div onClick={handleDelete}>不選擇</div>
             {list.map((v, index) => (
               <div
-                key={index} 
+                key={index}
                 onClick={() => {
                   handleSelect(v);
                 }}

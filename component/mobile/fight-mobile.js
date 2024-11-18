@@ -6,7 +6,8 @@ import { FaList } from "react-icons/fa";
 import { FiSearch } from "react-icons/fi";
 import Select from "../select";
 import { ethnicity, props, shape } from "../json/ro";
-export default function Mobile() {
+import { FaDeleteLeft } from "react-icons/fa6";
+export default function FightMobile() {
   const router = useRouter();
   // 技能顯示
   const { empty } = useCheck();
@@ -101,35 +102,93 @@ export default function Mobile() {
       });
     }
   }, [empty]);
+
+  const [openQuestion, setOpenQuestion] = useState(false);
+  const handleChangeRouter = () => {
+    router.pathname === "/fight"
+      ? router.push("/monster")
+      : router.push("/fight");
+  };
   return (
-    <div className="mobile-block">
-      <div className="black-block m-nav">
-        {router.pathname === "/fight" ? (
-          <i className="icon-fight"></i>
-        ) : (
-          <FiSearch />
-        )}
+    <>
+      <div className="mobile-block">
+        <div className="black-block m-nav" onClick={handleChangeRouter}>
+          {router.pathname === "/fight" ? (
+            <i className="icon-fight"></i>
+          ) : (
+            <FiSearch />
+          )}
+        </div>
+        <div className="black-block m-list-btn">
+          <FaList
+            onClick={() => {
+              setOpenQuestion(true);
+            }}
+          />
+        </div>
+        <div className="m-select1">
+          <Select
+            names="props"
+            list={props}
+            question={router.pathname === "/fight" ? "屬性" : "材料"}
+          />
+        </div>
+        <div className="m-select2">
+          <Select
+            names="shape"
+            list={shape}
+            question={router.pathname === "/fight" ? "體型" : "職業"}
+          />
+        </div>
+        <div className="m-select3">
+          <Select
+            names="ethnicity"
+            list={ethnicity}
+            question={router.pathname === "/fight" ? "種族" : "等級"}
+          />
+        </div>
+        <div className="black-block m-content">
+          {two.map((item, i) => (
+            <div key={i}>{skill2[item]}</div>
+          ))}
+          {three.map((item, i) => (
+            <div key={i}>{skill3[item]}</div>
+          ))}
+        </div>
       </div>
-      <div className="black-block m-list-btn">
-        <FaList />
-      </div>
-      <div className="m-select1">
-        <Select names="props" list={props} />
-      </div>
-      <div className="m-select2">
-        <Select names="shape" list={shape} />
-      </div>
-      <div className="m-select3">
-        <Select names="ethnicity" list={ethnicity} />
-      </div>
-      <div className="black-block m-content">
-        {two.map((item, i) => (
-          <div key={i}>{skill2[item]}</div>
-        ))}
-        {three.map((item, i) => (
-          <div key={i}>{skill3[item]}</div>
-        ))}
-      </div>
-    </div>
+      {openQuestion ? (
+        <div className="question-block black-block">
+          <button
+            onClick={() => {
+              setOpenQuestion(false);
+            }}
+          >
+            <FaDeleteLeft />
+          </button>
+          <div className="skill-list">
+            <div>
+              <div>上陣兩隻同樣屬性寵物</div>
+              <hr />
+              {Object.entries(skill2).map(([key, values], i) => (
+                <div key={i}>
+                  {key} : {values}
+                </div>
+              ))}
+            </div>
+            <div>
+              <div>上陣三隻同樣屬性寵物</div>
+              <hr />
+              {Object.entries(skill3).map(([key, values], i) => (
+                <div key={i}>
+                  {key} : {values}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
+    </>
   );
 }

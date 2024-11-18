@@ -17,6 +17,8 @@ export const CheckContext = ({ children }) => {
 
   const [empty, setempty] = useState({ block1: [], block2: [], block3: [] });
 
+  const [monster, setMonster] = useState();
+
   const update = (array1, array2, array3, type) => {
     if (type === "remove") {
       setempty((prev) => {
@@ -46,27 +48,32 @@ export const CheckContext = ({ children }) => {
   };
 
   const handlepush = (event, key, value) => {
-    const { checked } = event.target;
-    setCheck(checked);
-    // 名子為唯一值判定
-    if (checked) {
-      setaid((prev) => {
-        if (prev.length < 5 && !prev.includes(key)) {
-          return [...prev, key];
-        }
-        return prev;
-      });
-      setProp({ key, value });
-    } else {
-      setaid((prev) =>
-        prev.filter((item, index) => {
-          if (item == key) {
-            setIndex(index);
+    const { checked, name } = event.target;
+
+    if (name === "fight") {
+      setCheck(checked);
+      // 名子為唯一值判定
+      if (checked) {
+        setaid((prev) => {
+          if (prev.length < 5 && !prev.includes(key)) {
+            return [...prev, key];
           }
-          return item !== key;
-        })
-      );
-      setProp({ key, value });
+          return prev;
+        });
+        setProp({ key, value });
+      } else {
+        setaid((prev) =>
+          prev.filter((item, index) => {
+            if (item == key) {
+              setIndex(index);
+            }
+            return item !== key;
+          })
+        );
+        setProp({ key, value });
+      }
+    } else if (name === "monster") {
+      setMonster(key);
     }
   };
 
@@ -102,6 +109,7 @@ export const CheckContext = ({ children }) => {
         empty,
         handlepush,
         handleDeleteMonster,
+        monster,
       }}
     >
       {children}

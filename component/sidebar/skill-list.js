@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { skill2, skill3 } from "../json/ro";
 import { useCheck } from "@/hook/check-context";
 import { MdOutlineCancel } from "react-icons/md";
@@ -98,16 +98,38 @@ export default function SkillList() {
     }
   }, [empty]);
 
+  const gridRefs = useRef([]);
+  console.log(gridRefs);
+
+  const handleMouseEnter = (index) => {
+    gridRefs.current.forEach((grid) => {
+      const targetSpan = grid?.querySelectorAll("span")[index];
+      if (targetSpan) {
+        targetSpan.style.color = "#4459A8";
+      }
+    });
+  };
+  const handleMouseOut = (index) => {
+    gridRefs.current.forEach((grid) => {
+      const targetSpan = grid?.querySelectorAll("span")[index];
+      if (targetSpan) {
+        targetSpan.style.color = "";
+      }
+    });
+  };
+
   return (
     <>
       <div className="pet-select-list black-block">
-        <div className="grid">
+        <div className="grid" ref={(el) => (gridRefs.current[0] = el)}>
           {aid.map((v, i) => (
             <>
               <span key={i}>
                 <button
                   className="cancle"
                   onClick={() => handleDeleteMonster(v)}
+                  onMouseEnter={() => handleMouseEnter(i)}
+                  onMouseLeave={() => handleMouseOut(i)}
                 >
                   <MdOutlineCancel />
                 </button>
@@ -116,17 +138,17 @@ export default function SkillList() {
             </>
           ))}
         </div>
-        <div className="grid">
+        <div className="grid" ref={(el) => (gridRefs.current[1] = el)}>
           {empty?.block1?.map((v, i) => (
             <span key={i}>{v}</span>
           ))}
         </div>
-        <div className="grid">
+        <div className="grid" ref={(el) => (gridRefs.current[2] = el)}>
           {empty?.block2?.map((v, i) => (
             <span key={i}>{v}</span>
           ))}
         </div>
-        <div className="grid">
+        <div className="grid" ref={(el) => (gridRefs.current[3] = el)}>
           {empty?.block3?.map((v, i) => (
             <span key={i}>{v}</span>
           ))}

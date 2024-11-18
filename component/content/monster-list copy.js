@@ -1,6 +1,6 @@
 import React from "react";
 import Select from "../select";
-import MCard from "./m-card";
+import Card from "./card";
 import { rank, material, profession } from "../json/ro";
 export default function ContentMonsterList() {
   return (

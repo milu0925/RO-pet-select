@@ -31,7 +31,7 @@ export const SelectContext = ({ children }) => {
     setCurrentM(filtered);
   }, [selects]);
   const handleClearSelects = () => {
-    setselects(["", "", ""]);
+    setselects(["", "", "", "", "", ["", "", ""]]);
   };
 
   // 切頁
