@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { skill2, skill3 } from "../json/ro";
 import { useCheck } from "@/hook/check-context";
 import { FaList } from "react-icons/fa";
@@ -7,10 +7,13 @@ import { FiSearch } from "react-icons/fi";
 import Select from "../select";
 import { ethnicity, props, shape } from "../json/ro";
 import { FaDeleteLeft } from "react-icons/fa6";
+import { FaQuestionCircle } from "react-icons/fa";
+import { MdOutlineCancel } from "react-icons/md";
 export default function FightMobile() {
   const router = useRouter();
+  const gridRefs = useRef([]);
   // 技能顯示
-  const { empty } = useCheck();
+  const { aid, empty, handleDeleteMonster } = useCheck();
   const [two, setTwo] = useState([]); // 兩ㄍ
   const [three, setThree] = useState([]); //三ㄍ
   useEffect(() => {
@@ -109,6 +112,25 @@ export default function FightMobile() {
       ? router.push("/monster")
       : router.push("/fight");
   };
+
+  const [openMonsterList, setOpenMonsterList] = useState(false);
+
+  const handleMouseEnter = (index) => {
+    gridRefs.current.forEach((grid) => {
+      const targetSpan = grid?.querySelectorAll("span")[index];
+      if (targetSpan) {
+        targetSpan.style.color = "#4459A8";
+      }
+    });
+  };
+  const handleMouseOut = (index) => {
+    gridRefs.current.forEach((grid) => {
+      const targetSpan = grid?.querySelectorAll("span")[index];
+      if (targetSpan) {
+        targetSpan.style.color = "";
+      }
+    });
+  };
   return (
     <>
       <div className="mobile-block">
@@ -122,30 +144,18 @@ export default function FightMobile() {
         <div className="black-block m-list-btn">
           <FaList
             onClick={() => {
-              setOpenQuestion(true);
+              setOpenMonsterList(true);
             }}
           />
         </div>
         <div className="m-select1">
-          <Select
-            names="props"
-            list={props}
-            question={router.pathname === "/fight" ? "屬性" : "材料"}
-          />
+          <Select names="props" list={props} question="屬性" />
         </div>
         <div className="m-select2">
-          <Select
-            names="shape"
-            list={shape}
-            question={router.pathname === "/fight" ? "體型" : "職業"}
-          />
+          <Select names="shape" list={shape} question="體型" />
         </div>
         <div className="m-select3">
-          <Select
-            names="ethnicity"
-            list={ethnicity}
-            question={router.pathname === "/fight" ? "種族" : "等級"}
-          />
+          <Select names="ethnicity" list={ethnicity} question="種族" />
         </div>
         <div className="black-block m-content">
           {two.map((item, i) => (
@@ -154,6 +164,12 @@ export default function FightMobile() {
           {three.map((item, i) => (
             <div key={i}>{skill3[item]}</div>
           ))}
+          <FaQuestionCircle
+            className="rwd-question-list"
+            onClick={() => {
+              setOpenQuestion(true);
+            }}
+          />
         </div>
       </div>
       {openQuestion ? (
@@ -183,6 +199,59 @@ export default function FightMobile() {
                   {key} : {values}
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
+      {openMonsterList ? (
+        <div className="question-block black-block">
+          <button
+            onClick={() => {
+              setOpenMonsterList(false);
+            }}
+          >
+            <FaDeleteLeft />
+          </button>
+          <div className="skill-list">
+            <div>
+              <div>已上陣的寵物</div>
+              <hr />
+              <div className="pet-select-list">
+                <div className="grid" ref={(el) => (gridRefs.current[0] = el)}>
+                  {aid.map((v, i) => (
+                    <>
+                      <span key={i}>
+                        <button
+                          className="cancle"
+                          onClick={() => handleDeleteMonster(v)}
+                          onMouseEnter={() => handleMouseEnter(i)}
+                          onMouseLeave={() => handleMouseOut(i)}
+                        >
+                          <MdOutlineCancel />
+                        </button>
+                        {v}
+                      </span>
+                    </>
+                  ))}
+                </div>
+                <div className="grid" ref={(el) => (gridRefs.current[1] = el)}>
+                  {empty?.block1?.map((v, i) => (
+                    <span key={i}>{v}</span>
+                  ))}
+                </div>
+                <div className="grid" ref={(el) => (gridRefs.current[2] = el)}>
+                  {empty?.block2?.map((v, i) => (
+                    <span key={i}>{v}</span>
+                  ))}
+                </div>
+                <div className="grid" ref={(el) => (gridRefs.current[3] = el)}>
+                  {empty?.block3?.map((v, i) => (
+                    <span key={i}>{v}</span>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>

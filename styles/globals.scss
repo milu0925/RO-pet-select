@@ -14,6 +14,7 @@
 
 body {
   margin: 0;
+  color: black;
   a {
     text-decoration: none;
     color: black;
@@ -185,43 +186,7 @@ body {
         }
       }
     }
-    .pet-select-list {
-      > div {
-        &:nth-child(odd) {
-          background-color: rgba(var(--primary-color), 0.5);
-        }
-        &:nth-child(even) {
-          background-color: rgba(var(--primary-color), 0.2);
-        }
-        &:first-child {
-          background-color: rgb(var(--primary-color));
-          border-radius: 12px 12px 0 0;
-        }
-      }
-      span {
-        position: relative;
-      }
-      .cancle {
-        cursor: pointer;
-        position: absolute;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        top: -38px;
-        svg {
-          background: black;
-          color: white;
-          border-radius: 50%;
-          width: 25px;
-          height: 25px;
-          font-size: 30px;
-        }
-      }
-      &:hover .cancle:hover + .grid {
-        background-color: red !important; /* 強制覆蓋背景色 */
-      }
-    }
+
     .skill {
       flex-grow: 1;
       padding: 16px;
@@ -239,6 +204,45 @@ body {
   border: 3px solid rgb(var(--black));
   border-radius: 16px;
   box-shadow: 5px 5px rgba(var(--black), 0.5);
+}
+
+// table
+.pet-select-list {
+  > div {
+    &:nth-child(odd) {
+      background-color: rgba(var(--primary-color), 0.5);
+    }
+    &:nth-child(even) {
+      background-color: rgba(var(--primary-color), 0.2);
+    }
+    &:first-child {
+      background-color: rgb(var(--primary-color));
+      border-radius: 12px 12px 0 0;
+    }
+  }
+  span {
+    position: relative;
+  }
+  .cancle {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -38px;
+    svg {
+      background: black;
+      color: white;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      font-size: 30px;
+    }
+  }
+  &:hover .cancle:hover + .grid {
+    background-color: red !important; /* 強制覆蓋背景色 */
+  }
 }
 
 // card
@@ -570,6 +574,13 @@ body {
       padding: 16px;
       line-height: 1.8;
       overflow-y: auto;
+      .rwd-question-list {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        color: #4459a8;
+        font-size: 24px;
+      }
     }
   }
   .mobile-background-line {
@@ -593,6 +604,7 @@ body {
     width: 94%;
     height: calc(100vh - 30px - 6px);
     > button {
+      color: black;
       right: -25px;
       top: -25px;
       transform: rotate(135deg);
