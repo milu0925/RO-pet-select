@@ -3,8 +3,6 @@ import React from "react";
 import Image from "next/image";
 export default function SidebarMonsterList() {
   const { prop, monster } = useCheck();
-  console.log(monster);
-  console.log(prop);
 
   return (
     <>

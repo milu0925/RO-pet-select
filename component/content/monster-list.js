@@ -4,6 +4,8 @@ import { useSelect } from "@/hook/select-context";
 import MCard from "./m-card";
 import { strengthen, enchant, refine, repair } from "../json/ro";
 
+import Slider from "react-slick";
+
 export default function ContentMonsterList() {
   const [active, setActive] = useState("strengthen");
   const { selects = [], setselects } = useSelect(); // 確保 selects 有默認值
@@ -34,9 +36,18 @@ export default function ContentMonsterList() {
     setselects(updatedSelects);
   };
 
+  // scroll
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 3,
+    variableWidth: true,
+  };
+
   return (
     <div className="content">
-      {/* 上部按鈕區域 */}
       <div className="top">
         <div className="black-block scroll-search">
           {["strengthen", "enchant", "refine", "repair"].map((name) => (
@@ -64,24 +75,26 @@ export default function ContentMonsterList() {
         </div>
       </div>
 
-      {/* 中部列表區域 */}
       <div className="middle">
-        {getActiveArray().map((item, index) => (
-          <div
-            key={index}
-            className={`black-block ${selects[3] === item ? "active" : ""}`}
-            onClick={() => handleSelect(item)}
-          >
-            <Image
-              alt="material"
-              src={`/images/${item}.png`}
-              width={50}
-              height={50}
-              priority
-            />
-            <span>{item}</span>
-          </div>
-        ))}
+        <Slider {...settings}>
+          {getActiveArray().map((item, index) => (
+            <div
+              key={index}
+              className={`monster-card black-block ${
+                selects[3] === item ? "active" : ""
+              }`}
+              onClick={() => handleSelect(item)}
+            >
+              <Image
+                alt="material"
+                src={`/images/${item}.png`}
+                width={50}
+                height={50}
+              />
+              <span>{item}</span>
+            </div>
+          ))}
+        </Slider>
       </div>
 
       {/* 底部怪物卡片區域 */}

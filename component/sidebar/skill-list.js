@@ -99,7 +99,6 @@ export default function SkillList() {
   }, [empty]);
 
   const gridRefs = useRef([]);
-  console.log(gridRefs);
 
   const handleMouseEnter = (index) => {
     gridRefs.current.forEach((grid) => {

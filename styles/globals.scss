@@ -107,28 +107,16 @@ body {
         }
       }
       .middle {
-        width: 68vw;
-        display: flex;
-        gap: 16px;
-        overflow-x: auto;
-        &::-webkit-scrollbar {
-          width: 0;
-        }
+        margin-inline: 3rem;
         > div {
-          flex-shrink: 0;
-          width: 100px;
-          height: 100px;
-          margin: 5px;
-          img {
-            width: 80px;
-            height: 100%;
-          }
-          span {
-            font-size: 8px;
-          }
-          &.active {
+          .active {
             background: #ffcc00;
           }
+        }
+        .monster-card {
+          width: 100px;
+          height: 100px;
+          padding: 4px;
         }
       }
       .bottom {
@@ -494,6 +482,23 @@ body {
   .skill-list {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+// slider
+.slick-slider {
+  width: 68vw;
+  height: 120px;
+  .slick-list {
+    height: 100%;
+  }
+  .slick-track {
+    height: 100%;
+    > div {
+      width: 100px;
+      height: 100%;
+      margin: 8px 16px;
+    }
   }
 }
 
