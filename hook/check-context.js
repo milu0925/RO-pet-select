@@ -9,15 +9,18 @@ import React, {
 export const CreateCheck = createContext(null);
 
 export const CheckContext = ({ children }) => {
-  const [aid, setaid] = useState([]); //唯一值名稱
   const [index, setIndex] = useState(0); //要移除的位置
 
-  const [check, setCheck] = useState(false); //是否選擇
-  const [prop, setProp] = useState({ key: "", value: [] }); //選擇到的
+  const [check, setCheck] = useState(false); //是否選擇的樣式開關
+  const [prop, setProp] = useState({ key: "", value: [] }); //選擇到的魔物所有資訊
 
-  const [empty, setempty] = useState({ block1: [], block2: [], block3: [] });
+  const [aid, setaid] = useState([]); // 看獸王的陣列ID array
+  const [empty, setempty] = useState({ block1: [], block2: [], block3: [] }); //  看獸王的陣列屬性種族體型 array
 
   const [monster, setMonster] = useState();
+
+  console.log(monster);
+  console.log(prop);
 
   const update = (array1, array2, array3, type) => {
     if (type === "remove") {

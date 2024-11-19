@@ -15,14 +15,11 @@ export default function Select({ names, list, question }) {
     } else if (names === "ethnicity") {
       updatedSelects[2] = value;
       setselects(updatedSelects);
-    } else if (names === "material") {
+    } else if (names === "level") {
       updatedSelects[5] = value;
       setselects(updatedSelects);
-    } else if (names === "profession") {
+    } else if (names === "material") {
       updatedSelects[3] = value;
-      setselects(updatedSelects);
-    } else if (names === "rank") {
-      updatedSelects[4] = value;
       setselects(updatedSelects);
     }
     setselectName(value);

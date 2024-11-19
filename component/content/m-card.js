@@ -8,11 +8,6 @@ export default function MCard() {
 
   return (
     <div className="flex">
-      <div className="monster-active-box">
-        <div className="black-block">
-          {monster ? <img src={`/images/${monster}.png`} /> : ""}
-        </div>
-      </div>
       {currentM &&
         Object.entries(currentM).map(([key, values], index) => (
           <label

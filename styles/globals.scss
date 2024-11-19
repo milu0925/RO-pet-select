@@ -106,6 +106,27 @@ body {
           }
         }
       }
+      .middle {
+        width: 70vw;
+        display: flex;
+        gap: 16px;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+          // width: 0;
+        }
+        > div {
+          width: 100px;
+          height: 100px;
+          margin: 3px;
+          img {
+            width: 80px;
+            height: 100%;
+          }
+          span {
+            font-size: 8px;
+          }
+        }
+      }
       .bottom {
         position: relative;
         z-index: 1;
@@ -128,7 +149,6 @@ body {
           background-color: #45a049; /* 滑塊顏色懸停 */
         }
         .monster-block {
-          margin-top: 5rem;
           padding: 100px 20px;
           .monster {
             width: 120px;
@@ -334,7 +354,37 @@ body {
     }
   }
 }
-
+// SCROLL
+.scroll-search {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  transition: all 0.3s ease;
+  position: relative;
+  > button {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    width: 25%;
+    position: relative;
+    z-index: 2;
+  }
+  .btn-active {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 25%;
+    height: calc(100% - 8px);
+    margin-block: 4px;
+    border-radius: 100px;
+    background: rgb(var(--primary-color));
+    border: 3px solid #b1c0d4;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+    color: white;
+  }
+}
 .question-block {
   position: absolute;
   top: 0;
@@ -357,22 +407,6 @@ body {
   .skill-list {
     display: flex;
     justify-content: space-between;
-  }
-}
-.monster-active-box {
-  position: absolute;
-  width: 100%;
-  top: -170px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  > div {
-    width: 150px;
-    height: auto;
-    display: block;
-    img {
-      width: 100%;
-    }
   }
 }
 
