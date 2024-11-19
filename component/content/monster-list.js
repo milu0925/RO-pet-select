@@ -72,7 +72,7 @@ export default function ContentMonsterList() {
         {getActiveArray().map((item, index) => (
           <div
             key={index}
-            className="black-block"
+            className={`black-block ${selects[3] === item ? "active" : ""}`}
             onClick={() => handleSelect(item)}
           >
             <img alt="material" src={`/images/${item}.png`} />

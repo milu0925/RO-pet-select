@@ -107,23 +107,27 @@ body {
         }
       }
       .middle {
-        width: 70vw;
+        width: 68vw;
         display: flex;
         gap: 16px;
         overflow-x: auto;
         &::-webkit-scrollbar {
-          // width: 0;
+          width: 0;
         }
         > div {
+          flex-shrink: 0;
           width: 100px;
           height: 100px;
-          margin: 3px;
+          margin: 5px;
           img {
             width: 80px;
             height: 100%;
           }
           span {
             font-size: 8px;
+          }
+          &.active {
+            background: #ffcc00;
           }
         }
       }
@@ -149,12 +153,16 @@ body {
           background-color: #45a049; /* 滑塊顏色懸停 */
         }
         .monster-block {
-          padding: 100px 20px;
+          padding: 20px;
+          margin: 5px;
           .monster {
             width: 120px;
             height: 120px;
             img {
               height: 100px;
+            }
+            &.active {
+              background: #ffcc00;
             }
           }
         }
@@ -304,6 +312,84 @@ body {
     background: #ffcc00;
   }
 }
+// one monster
+.one-monster-data {
+  padding: 16px;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  background: white;
+  border-radius: 12px;
+  border: 3px solid rgb(190, 189, 189);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.486);
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .label {
+    position: absolute;
+    left: -16px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    .attr {
+      border: 1px solid rgb(247, 246, 246);
+      box-shadow: 2px 2px gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background: #7ed9cd;
+      width: 90px;
+      padding: 3px 5px;
+    }
+    .shape {
+      border: 1px solid rgb(190, 189, 189);
+      box-shadow: 2px 2px gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background: #80a9df;
+      width: 30px;
+      padding: 3px 5px;
+    }
+    .eth {
+      border: 1px solid rgb(190, 189, 189);
+      box-shadow: 2px 2px gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background: #6cbf97;
+      width: 60px;
+      padding: 3px 5px;
+    }
+  }
+  .name {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 20px 0 0;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgb(var(--primary-color));
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+  }
+  .level {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 36px;
+    font-weight: bolder;
+    padding: 0 0 3px 28px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: rgba(0, 0, 0, 0.2);
+  }
+}
 // SELECT
 .select {
   position: relative;
@@ -356,6 +442,7 @@ body {
 }
 // SCROLL
 .scroll-search {
+  padding-inline: 32px;
   width: 100%;
   height: 50px;
   display: flex;
@@ -373,8 +460,8 @@ body {
   .btn-active {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 25%;
+    left: 32px;
+    width: calc(25% - 16px);
     height: calc(100% - 8px);
     margin-block: 4px;
     border-radius: 100px;

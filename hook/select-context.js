@@ -40,6 +40,7 @@ export const SelectContext = ({ children }) => {
   const [activePage, setactivePage] = useState("fight");
   const router = useRouter();
   useEffect(() => {
+    setselects(["", "", "", ""]);
     router.push(`/${activePage}`);
   }, [activePage]);
 

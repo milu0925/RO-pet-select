@@ -17,10 +17,7 @@ export const CheckContext = ({ children }) => {
   const [aid, setaid] = useState([]); // 看獸王的陣列ID array
   const [empty, setempty] = useState({ block1: [], block2: [], block3: [] }); //  看獸王的陣列屬性種族體型 array
 
-  const [monster, setMonster] = useState();
-
-  console.log(monster);
-  console.log(prop);
+  const [monster, setMonster] = useState(); // 魔物搜尋點到的
 
   const update = (array1, array2, array3, type) => {
     if (type === "remove") {
@@ -77,6 +74,7 @@ export const CheckContext = ({ children }) => {
       }
     } else if (name === "monster") {
       setMonster(key);
+      setProp({ key, value });
     }
   };
 
@@ -113,6 +111,7 @@ export const CheckContext = ({ children }) => {
         handlepush,
         handleDeleteMonster,
         monster,
+        prop,
       }}
     >
       {children}
