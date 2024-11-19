@@ -17,8 +17,8 @@ export default function MonsterList() {
         </div>
         <div className="label">
           <div className="attr">
-            {prop.value[0]}
-            {prop.value[0] && !prop?.value[0]?.includes("屬性") ? "屬性" : ""}
+            {prop.value?.[0] || ""}
+            {!prop.value?.[0]?.includes("屬性") ? "屬性" : ""}
           </div>
           <div className="eth">{prop.value[2]}</div>
           <div className="shape">{prop.value[1]}</div>
