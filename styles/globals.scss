@@ -471,11 +471,11 @@ body {
 }
 .question-block {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 30px;
+  left: 20px;
+  bottom: 10px;
   z-index: 5;
   width: 95%;
-  height: 650px;
   padding: 2rem;
   > button {
     cursor: pointer;

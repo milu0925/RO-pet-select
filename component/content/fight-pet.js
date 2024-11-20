@@ -43,41 +43,41 @@ export default function FightPet() {
       )}
       <div className="bottom">
         <Card />
-        {openQuestion ? (
-          <div className="question-block black-block">
-            <button
-              onClick={() => {
-                setOpenQuestion(false);
-              }}
-            >
-              <FaDeleteLeft />
-            </button>
-            <div className="skill-list">
-              <div>
-                <div>上陣兩隻同樣屬性寵物</div>
-                <hr />
-                {Object.entries(skill2).map(([key, values], i) => (
-                  <div key={i}>
-                    {key} : {values}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <div>上陣三隻同樣屬性寵物</div>
-                <hr />
-                {Object.entries(skill3).map(([key, values], i) => (
-                  <div key={i}>
-                    {key} : {values}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        ) : (
-          ""
-        )}
       </div>
       <div className="mobile-background-line"></div>
+      {openQuestion ? (
+        <div className="question-block black-block ">
+          <button
+            onClick={() => {
+              setOpenQuestion(false);
+            }}
+          >
+            <FaDeleteLeft />
+          </button>
+          <div className="skill-list">
+            <div>
+              <div>上陣兩隻同樣屬性寵物</div>
+              <hr />
+              {Object.entries(skill2).map(([key, values], i) => (
+                <div key={i}>
+                  {key} : {values}
+                </div>
+              ))}
+            </div>
+            <div>
+              <div>上陣三隻同樣屬性寵物</div>
+              <hr />
+              {Object.entries(skill3).map(([key, values], i) => (
+                <div key={i}>
+                  {key} : {values}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
