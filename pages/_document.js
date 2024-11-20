@@ -20,6 +20,23 @@ export default function Document() {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RG7QEEE3SC"
+        ></script>
+        {/* 加入 Google Analytics 的追蹤代碼 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-RG7QEEE3SC"
+        ></script>
+        <script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-RG7QEEE3SC');
+          `}
+        </script>
       </Head>
       <body>
         <Main />
