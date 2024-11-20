@@ -233,6 +233,7 @@ body {
 
 // table
 .pet-select-list {
+  justify-content: space-between;
   > div {
     &:nth-child(odd) {
       background-color: rgba(var(--primary-color), 0.5);
