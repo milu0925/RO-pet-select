@@ -676,7 +676,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 60px 60px auto;
-    grid-template-rows: 60px 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px auto;
     grid-template-areas:
       "nav nav content"
       "btn1 btn2 content"
