@@ -115,17 +115,19 @@ body {
           }
         }
         .monster-card {
+          display: flex !important;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           width: 100px;
           height: 100px;
-          padding: 4px;
         }
       }
       .bottom {
         position: relative;
         z-index: 1;
-        height: calc(100vh - 80px - 2rem * 2);
+        height: calc(100vh - 80px - 120px);
         overflow-y: auto;
-        padding-bottom: 4rem;
         &::-webkit-scrollbar {
           width: 12px;
         }
@@ -177,6 +179,7 @@ body {
         height: 150px;
         border-radius: 3px;
         transition: all 0.5s ease-in-out;
+        i,
         svg {
           font-size: 70px;
         }

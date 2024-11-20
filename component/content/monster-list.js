@@ -42,7 +42,7 @@ export default function ContentMonsterList() {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     variableWidth: true,
   };
 
@@ -87,7 +87,7 @@ export default function ContentMonsterList() {
             >
               <Image
                 alt="material"
-                src={`/images/${item}.png`}
+                src={`/images/material/${item}.png`}
                 width={50}
                 height={50}
               />

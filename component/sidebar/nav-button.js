@@ -19,8 +19,8 @@ export default function NavButton() {
         name="monster"
         onClick={handleRouter}
       >
-        <IoSearch />
-        {/* <i className="icon-monster"></i> */}
+        {/* <IoSearch /> */}
+        <i className="icon-monster"></i>
       </button>
       <button
         className={`black-block nav-btn ${
@@ -29,8 +29,8 @@ export default function NavButton() {
         name="fight"
         onClick={handleRouter}
       >
-        <IoIosListBox />
-        {/* <i className="icon-fight"></i> */}
+        {/* <IoIosListBox /> */}
+        <i className="icon-fight"></i>
       </button>
     </div>
   );
