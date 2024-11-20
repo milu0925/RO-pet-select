@@ -7,7 +7,7 @@ export default function Home() {
         材料搜尋
       </Link>
       <Link href="/fight" className="black-block">
-        魔物搜尋
+        獸王搭配
       </Link>
     </div>
   );
