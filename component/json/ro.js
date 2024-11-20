@@ -276,6 +276,9 @@ export const strengthen = [
   "櫻桃魚",
   "霧靄水母",
   "鐵錘魚",
+  "天然銀礦",
+  "天然金礦",
+  "天然銥礦",
 ];
 
 export const enchant = [
