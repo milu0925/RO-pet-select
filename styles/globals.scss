@@ -200,6 +200,26 @@ body {
   }
 }
 
+.home {
+  background: rgba(var(--primary-color), 0.5);
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+  a {
+    width: 300px;
+    height: 300px;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: rgba(var(--accent-color));
+  }
+}
+
 // 黑色border外框
 .black-block {
   position: relative;

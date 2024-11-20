@@ -37,7 +37,7 @@ export const SelectContext = ({ children }) => {
   };
 
   // 切頁
-  const [activePage, setactivePage] = useState("fight");
+  const [activePage, setactivePage] = useState("");
   const router = useRouter();
   useEffect(() => {
     setselects(["", "", "", ""]);
