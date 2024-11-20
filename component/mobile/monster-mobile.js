@@ -6,8 +6,8 @@ import { strengthen, enchant, refine, repair } from "../json/ro";
 import Select from "../select";
 import Image from "next/image";
 export default function MonsterMobile() {
-  const { selects = [], setselects } = useSelect(); // 確保 selects 有默認值
-  const { prop } = useCheck();
+  const { selects } = useSelect(); // 確保 selects 有默認值
+  const { monster, prop } = useCheck();
   // 按鈕點擊處理
   const [active, setActive] = useState("強化");
   const handleActive = (e) => {
@@ -27,6 +27,9 @@ export default function MonsterMobile() {
     { name: "repair", short: "修", className: "m-btn4" },
   ];
   const router = useRouter();
+  console.log(selects);
+  console.log(prop);
+  console.log(monster);
 
   return (
     <>
@@ -59,21 +62,29 @@ export default function MonsterMobile() {
           />
         </div>
         <div className="black-block m-content">
-          <Image
-            src={`/images/${prop.key}.png`}
-            alt="monster"
-            width="150"
-            height="150"
-          />
-          <div>{prop.key}</div>
-          <div className="prop">
-            <div>{prop.value[0]}</div>
-            <div>{prop.value[1]}</div>
-            <div>{prop.value[2]}</div>
-          </div>
-          <div className="level">Lv.{prop.value[3]}</div>
-          <div className="title-name">材料 :</div>
-          {prop.value[4] ? prop.value[4].map((v) => <div>{`${v}`}</div>) : ""}
+          {monster ? (
+            <>
+              <Image
+                src={`/images/${prop.key}.png`}
+                alt="monster"
+                width="150"
+                height="150"
+              />
+              <div>{prop.key}</div>
+              <div className="prop">
+                <div>{prop.value[0]}</div>
+                <div>{prop.value[1]}</div>
+                <div>{prop.value[2]}</div>
+              </div>
+              <div className="level">Lv.{prop.value[3]}</div>
+              <div className="title-name">材料 :</div>
+              {prop.value[4]
+                ? prop.value[4].map((v, index) => <div key={index}>{v}</div>)
+                : null}
+            </>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </>
