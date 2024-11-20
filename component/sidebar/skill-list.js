@@ -138,9 +138,10 @@ export default function SkillList() {
           ))}
         </div>
         <div className="grid" ref={(el) => (gridRefs.current[1] = el)}>
-          {empty?.block1?.map((v, i) => (
-            <span key={i}>{v}</span>
-          ))}
+          {empty?.block1?.map((v, i) => {
+            let value = v.slice(0, 2);
+            return <span key={i}>{value}</span>;
+          })}
         </div>
         <div className="grid" ref={(el) => (gridRefs.current[2] = el)}>
           {empty?.block2?.map((v, i) => (

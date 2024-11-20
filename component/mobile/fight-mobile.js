@@ -215,42 +215,39 @@ export default function FightMobile() {
             <FaDeleteLeft />
           </button>
           <div className="skill-list">
-            <div>
-              <div>已上陣的寵物</div>
-              <hr />
-              <div className="pet-select-list">
-                <div className="grid" ref={(el) => (gridRefs.current[0] = el)}>
-                  {aid.map((v, i) => (
-                    <>
-                      <span key={i}>
-                        <button
-                          className="cancle"
-                          onClick={() => handleDeleteMonster(v)}
-                          onMouseEnter={() => handleMouseEnter(i)}
-                          onMouseLeave={() => handleMouseOut(i)}
-                        >
-                          <MdOutlineCancel />
-                        </button>
-                        {v}
-                      </span>
-                    </>
-                  ))}
-                </div>
-                <div className="grid" ref={(el) => (gridRefs.current[1] = el)}>
-                  {empty?.block1?.map((v, i) => (
-                    <span key={i}>{v}</span>
-                  ))}
-                </div>
-                <div className="grid" ref={(el) => (gridRefs.current[2] = el)}>
-                  {empty?.block2?.map((v, i) => (
-                    <span key={i}>{v}</span>
-                  ))}
-                </div>
-                <div className="grid" ref={(el) => (gridRefs.current[3] = el)}>
-                  {empty?.block3?.map((v, i) => (
-                    <span key={i}>{v}</span>
-                  ))}
-                </div>
+            <div>已上陣的寵物</div>
+            <div className="pet-select-list">
+              <div className="grid" ref={(el) => (gridRefs.current[0] = el)}>
+                {aid.map((v, i) => (
+                  <>
+                    <span key={i}>
+                      <button
+                        className="cancle"
+                        onClick={() => handleDeleteMonster(v)}
+                        onMouseEnter={() => handleMouseEnter(i)}
+                        onMouseLeave={() => handleMouseOut(i)}
+                      >
+                        <MdOutlineCancel />
+                      </button>
+                      {v}
+                    </span>
+                  </>
+                ))}
+              </div>
+              <div className="grid" ref={(el) => (gridRefs.current[1] = el)}>
+                {empty?.block1?.map((v, i) => (
+                  <span key={i}>{v}</span>
+                ))}
+              </div>
+              <div className="grid" ref={(el) => (gridRefs.current[2] = el)}>
+                {empty?.block2?.map((v, i) => (
+                  <span key={i}>{v}</span>
+                ))}
+              </div>
+              <div className="grid" ref={(el) => (gridRefs.current[3] = el)}>
+                {empty?.block3?.map((v, i) => (
+                  <span key={i}>{v}</span>
+                ))}
               </div>
             </div>
           </div>
