@@ -126,7 +126,7 @@ body {
       .bottom {
         position: relative;
         z-index: 1;
-        height: calc(100vh - 80px - 120px);
+        height: calc(100vh - 2rem - 50px - 120px - 50px);
         overflow-y: auto;
         &::-webkit-scrollbar {
           width: 12px;
@@ -145,7 +145,7 @@ body {
         }
         .monster-block {
           padding: 20px;
-          margin: 5px;
+          margin: 10px 16px;
           .monster {
             width: 120px;
             height: 120px;
@@ -330,8 +330,8 @@ body {
     justify-content: space-between;
     gap: 16px;
     .attr {
-      border: 1px solid rgb(247, 246, 246);
-      box-shadow: 2px 2px gray;
+      border: 2px solid rgb(247, 246, 246);
+      box-shadow: 1px 1px rgb(83, 83, 83);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -341,8 +341,8 @@ body {
       padding: 3px 5px;
     }
     .shape {
-      border: 1px solid rgb(190, 189, 189);
-      box-shadow: 2px 2px gray;
+      border: 2px solid rgb(247, 246, 246);
+      box-shadow: 1px 1px rgb(83, 83, 83);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -352,8 +352,8 @@ body {
       padding: 3px 5px;
     }
     .eth {
-      border: 1px solid rgb(190, 189, 189);
-      box-shadow: 2px 2px gray;
+      border: 2px solid rgb(247, 246, 246);
+      box-shadow: 1px 1px rgb(83, 83, 83);
       display: flex;
       justify-content: center;
       align-items: center;
