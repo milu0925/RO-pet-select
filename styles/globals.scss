@@ -538,20 +538,22 @@ body {
   .mobile-block {
     width: 100%;
     display: grid;
-    grid-template-columns: 85px 70px auto;
-    grid-template-rows: 70px 75px 75px 75px;
+    grid-template-columns: 60px 60px auto;
+    grid-template-rows: 60px 50px 50px 50px;
     grid-template-areas:
       "nav list content"
       "select1 select1 content"
       "select2 select2 content"
       "select3 select3 content";
+    font-size: 24px;
+
     .m-nav {
       grid-area: nav;
       cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 50px;
+      font-size: 36px;
     }
 
     .m-list-btn {
@@ -560,7 +562,6 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 35px;
     }
     .m-select1 {
       grid-area: select1;
@@ -575,6 +576,7 @@ body {
       cursor: pointer;
     }
     .m-content {
+      height: auto;
       grid-area: content;
       padding: 16px;
       line-height: 1.8;
@@ -628,18 +630,19 @@ body {
     .option {
       width: 100%;
       height: auto;
-      padding: 16px;
-      font-size: 24px;
+      padding: 10px 5px;
+      font-size: 18px;
       border-radius: 0;
       span {
         letter-spacing: 0;
       }
       i {
-        font-size: 30px;
+        font-size: 20px;
       }
     }
     .s-content {
-      top: 68px;
+      top: 50px;
+      font-size: 16px;
     }
   }
 }

@@ -136,7 +136,7 @@ export default function FightMobile() {
       <div className="mobile-block">
         <div className="black-block m-nav" onClick={handleChangeRouter}>
           {router.pathname === "/fight" ? (
-            <i className="icon-fight"></i>
+            <i className="icon-monster"></i>
           ) : (
             <FiSearch />
           )}
