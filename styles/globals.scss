@@ -545,6 +545,9 @@ body {
     .layout-bg-left {
       .content {
         padding-inline: 1rem;
+        .top {
+          gap: 0;
+        }
         .middle {
           display: none;
         }
@@ -552,8 +555,8 @@ body {
           &::-webkit-scrollbar {
             display: none;
           }
-          height: 100vh; //重新計算一下總高
-          align-items: center;
+          height: calc(100vh - 229.6px - 4rem);
+          // align-items: center;
         }
       }
     }
