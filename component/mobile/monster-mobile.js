@@ -19,24 +19,24 @@ export default function MonsterMobile() {
     const arrays = { strengthen, enchant, refine, repair };
     return arrays[active] || [];
   };
-  // 處理選擇
-  const handleSelect = (value) => {
-    const updatedSelects = [...selects];
-    updatedSelects[3] = value;
-    setselects(updatedSelects);
-  };
+
   const buttons = [
     { name: "strengthen", short: "強", className: "m-btn1" },
     { name: "enchant", short: "附", className: "m-btn2" },
     { name: "refine", short: "精", className: "m-btn3" },
     { name: "repair", short: "修", className: "m-btn4" },
   ];
-  console.log(prop);
+  const router = useRouter();
 
   return (
     <>
       <div className="mobile-block-m">
-        <div className="black-block m-nav">
+        <div
+          className="black-block m-nav"
+          onClick={() => {
+            router.push("/fight");
+          }}
+        >
           <i className="icon-fight"></i>
         </div>
         {buttons.map(({ name, short }, index) => (
