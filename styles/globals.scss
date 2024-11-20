@@ -695,7 +695,6 @@ body {
     .m-btn0 {
       grid-area: btn1;
       border-radius: 2px;
-      color: black;
       &.active {
         background: #ffcc00;
       }
@@ -703,7 +702,6 @@ body {
     .m-btn1 {
       grid-area: btn2;
       border-radius: 2px;
-      color: black;
       &.active {
         background: #ffcc00;
       }
@@ -711,7 +709,6 @@ body {
     .m-btn2 {
       grid-area: btn3;
       border-radius: 2px;
-      color: black;
       &.active {
         background: #ffcc00;
       }
@@ -719,14 +716,12 @@ body {
     .m-btn3 {
       grid-area: btn4;
       border-radius: 2px;
-      color: black;
       &.active {
         background: #ffcc00;
       }
     }
     .m-select {
       grid-area: select;
-      color: black;
     }
     .m-content {
       height: 100%;
@@ -777,6 +772,7 @@ body {
       align-items: center;
       font-size: 24px;
       font-weight: bolder;
+      color: black;
     }
   }
 }
