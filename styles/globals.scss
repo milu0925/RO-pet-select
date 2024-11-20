@@ -86,7 +86,7 @@ body {
     position: relative;
     //左側主要內容區
     .content {
-      padding-inline: 54px 8px;
+      padding-inline: 24px 16px;
       .top {
         display: flex;
         gap: 1rem;
@@ -126,7 +126,7 @@ body {
       .bottom {
         position: relative;
         z-index: 1;
-        height: calc(100vh - 2rem - 50px - 120px - 50px);
+        height: calc(100vh - 2rem - 120px);
         overflow-y: auto;
         &::-webkit-scrollbar {
           width: 12px;
@@ -157,6 +157,9 @@ body {
             }
           }
         }
+      }
+      .bottom2 {
+        height: calc(100vh - 2rem - 50px - 120px - 50px);
       }
     }
   }

@@ -98,7 +98,7 @@ export default function ContentMonsterList() {
       </div>
 
       {/* 底部怪物卡片區域 */}
-      <div className="bottom">
+      <div className="bottom bottom2">
         <div className="monster-block black-block">
           <MCard />
         </div>
