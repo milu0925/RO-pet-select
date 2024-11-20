@@ -9,11 +9,13 @@ import { ethnicity, props, shape } from "../json/ro";
 import { FaDeleteLeft } from "react-icons/fa6";
 import { FaQuestionCircle } from "react-icons/fa";
 import { MdOutlineCancel } from "react-icons/md";
+import { RiDeleteBin6Fill } from "react-icons/ri";
 export default function FightMobile() {
   const router = useRouter();
   const gridRefs = useRef([]);
   // 技能顯示
-  const { aid, empty, handleDeleteMonster } = useCheck();
+  const { aid, empty, handleDeleteMonster, handleDeleteMonsterAll } =
+    useCheck();
   const [two, setTwo] = useState([]); // 兩ㄍ
   const [three, setThree] = useState([]); //三ㄍ
   useEffect(() => {
@@ -131,6 +133,13 @@ export default function FightMobile() {
       }
     });
   };
+
+  useEffect(() => {
+    if (aid.length === 0) {
+      setTwo([]);
+      setThree([]);
+    }
+  }, [aid]);
   return (
     <>
       <div className="mobile-block">
@@ -164,12 +173,18 @@ export default function FightMobile() {
           {three.map((item, i) => (
             <div key={i}>{skill3[item]}</div>
           ))}
-          <FaQuestionCircle
-            className="rwd-question-list"
-            onClick={() => {
-              setOpenQuestion(true);
-            }}
-          />
+          <div className="rwd-question-list">
+            <FaQuestionCircle
+              onClick={() => {
+                setOpenQuestion(true);
+              }}
+            />
+            <RiDeleteBin6Fill
+              onClick={() => {
+                handleDeleteMonsterAll();
+              }}
+            />
+          </div>
         </div>
       </div>
       {openQuestion ? (

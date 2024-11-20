@@ -94,6 +94,13 @@ export const CheckContext = ({ children }) => {
     });
     setCheck(false);
   };
+  // 刪除全部
+  const handleDeleteMonsterAll = () => {
+    setaid([]);
+    setempty({ block1: [], block2: [], block3: [] });
+    setIndex(0);
+    setCheck(false);
+  };
 
   useEffect(() => {
     if (check) {
@@ -110,6 +117,7 @@ export const CheckContext = ({ children }) => {
         empty,
         handlepush,
         handleDeleteMonster,
+        handleDeleteMonsterAll,
         monster,
         prop,
       }}
