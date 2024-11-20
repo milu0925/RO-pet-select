@@ -525,6 +525,9 @@ body {
     .layout-bg-left {
       .content {
         padding-inline: 1rem;
+        .middle {
+          display: none;
+        }
         .bottom {
           &::-webkit-scrollbar {
             display: none;
@@ -643,6 +646,108 @@ body {
     .s-content {
       top: 50px;
       font-size: 16px;
+    }
+  }
+
+  .mobile-block-m {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60px 60px auto;
+    grid-template-rows: 60px 60px 60px 50px;
+    grid-template-areas:
+      "nav nav content"
+      "btn1 btn2 content"
+      "btn3 btn4 content"
+      "select select content";
+    font-size: 24px;
+
+    .m-nav {
+      grid-area: nav;
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+    }
+    .m-btn0 {
+      grid-area: btn1;
+      border-radius: 2px;
+      &.active {
+        background: #ffcc00;
+      }
+    }
+    .m-btn1 {
+      grid-area: btn2;
+      border-radius: 2px;
+      &.active {
+        background: #ffcc00;
+      }
+    }
+    .m-btn2 {
+      grid-area: btn3;
+      border-radius: 2px;
+      &.active {
+        background: #ffcc00;
+      }
+    }
+    .m-btn3 {
+      grid-area: btn4;
+      border-radius: 2px;
+      &.active {
+        background: #ffcc00;
+      }
+    }
+    .m-select {
+      grid-area: select;
+    }
+    .m-content {
+      grid-area: content;
+      padding: 16px;
+      border-radius: 2px;
+      img {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+      }
+      .level {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+      }
+      .prop {
+        display: flex;
+        gap: 4px;
+        font-size: 12px;
+        padding-block: 8px;
+        div {
+          padding: 2px 8px;
+          border-radius: 12px;
+          background: forestgreen;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+      }
+      .title-name {
+        font-size: 12px;
+      }
+    }
+    button {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      font-weight: bolder;
     }
   }
 }

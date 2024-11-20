@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { useSelect } from "@/hook/select-context";
 import MCard from "./m-card";
 import { strengthen, enchant, refine, repair } from "../json/ro";
 
 import Slider from "react-slick";
+import MonsterMobile from "../mobile/monster-mobile";
 
 export default function ContentMonsterList() {
   const [active, setActive] = useState("strengthen");
@@ -46,33 +47,50 @@ export default function ContentMonsterList() {
     variableWidth: true,
   };
 
+  // 手機板
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 576);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="content">
       <div className="top">
-        <div className="black-block scroll-search">
-          {["strengthen", "enchant", "refine", "repair"].map((name) => (
-            <button
-              key={name}
-              name={name}
-              onClick={handleActive}
-              style={active === name ? { color: "white" } : {}}
-            >
-              {name === "strengthen"
-                ? "強化"
-                : name === "enchant"
-                ? "附魔"
-                : name === "refine"
-                ? "精煉"
-                : "修復"}
-            </button>
-          ))}
-          <div
-            className="btn-active"
-            style={{
-              transform: `translateX(${calculatePosition()}%)`,
-            }}
-          ></div>
-        </div>
+        {!isMobile ? (
+          <div className="black-block scroll-search">
+            {["strengthen", "enchant", "refine", "repair"].map((name) => (
+              <button
+                key={name}
+                name={name}
+                onClick={handleActive}
+                style={active === name ? { color: "white" } : {}}
+              >
+                {name === "strengthen"
+                  ? "強化"
+                  : name === "enchant"
+                  ? "附魔"
+                  : name === "refine"
+                  ? "精煉"
+                  : "修復"}
+              </button>
+            ))}
+            <div
+              className="btn-active"
+              style={{
+                transform: `translateX(${calculatePosition()}%)`,
+              }}
+            ></div>
+          </div>
+        ) : (
+          <MonsterMobile />
+        )}
       </div>
 
       <div className="middle">
@@ -97,7 +115,6 @@ export default function ContentMonsterList() {
         </Slider>
       </div>
 
-      {/* 底部怪物卡片區域 */}
       <div className="bottom bottom2">
         <div className="monster-block black-block">
           <MCard />

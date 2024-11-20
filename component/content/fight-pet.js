@@ -6,6 +6,7 @@ import FightMobile from "../mobile/fight-mobile";
 import { TiDelete } from "react-icons/ti";
 import { FaDeleteLeft } from "react-icons/fa6";
 import { skill2, skill3 } from "../json/ro";
+import { useRouter } from "next/router";
 export default function FightPet() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
