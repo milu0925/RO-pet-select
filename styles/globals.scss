@@ -600,7 +600,7 @@ body {
       cursor: pointer;
     }
     .m-content {
-      height: auto;
+      height: 100%;
       grid-area: content;
       padding: 16px;
       line-height: 1.8;
@@ -676,7 +676,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 60px 60px auto;
-    grid-template-rows: 60px 60px 60px 55px;
+    grid-template-rows: 60px 60px 60px 60px;
     grid-template-areas:
       "nav nav content"
       "btn1 btn2 content"
@@ -729,6 +729,7 @@ body {
       color: black;
     }
     .m-content {
+      height: 100%;
       grid-area: content;
       padding: 16px;
       border-radius: 2px;
