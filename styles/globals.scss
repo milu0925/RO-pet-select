@@ -186,7 +186,6 @@ body {
           font-size: 50px;
         }
         &.active {
-          // width: 246px;
           width: 12vw;
         }
       }
@@ -586,6 +585,8 @@ body {
       padding: 16px;
       line-height: 1.8;
       overflow-y: auto;
+      color: black;
+      border-radius: 2px;
       .rwd-question-list {
         position: absolute;
         top: 6px;
