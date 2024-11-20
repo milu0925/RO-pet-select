@@ -27,9 +27,6 @@ export default function MonsterMobile() {
     { name: "repair", short: "修", className: "m-btn4" },
   ];
   const router = useRouter();
-  console.log(selects);
-  console.log(prop);
-  console.log(monster);
 
   return (
     <>
