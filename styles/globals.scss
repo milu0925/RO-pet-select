@@ -564,7 +564,7 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 60px 60px auto;
-    grid-template-rows: 60px auto auto auto;
+    grid-template-rows: 60px 50px 50px 50px;
     grid-template-areas:
       "nav list content"
       "select1 select1 content"
@@ -603,7 +603,7 @@ body {
       cursor: pointer;
     }
     .m-content {
-      height: 209px;
+      height: auto;
       grid-area: content;
       padding: 16px;
       line-height: 1.8;
