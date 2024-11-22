@@ -8,6 +8,7 @@ export default function LayoutMain({ children }) {
         <NavButton />
         {children[1]}
       </div>
+      <div className="user">世界之樹/米路露</div>
     </div>
   );
 }

@@ -543,6 +543,33 @@ body {
   font-size: 12px;
 }
 
+.bg-user {
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    width: 300px;
+    span {
+      position: absolute;
+      right: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.user {
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-inline: 1rem;
+  color: rgb(var(--question));
+}
+
 @media screen and (max-width: 576px) {
   .layout-block {
     .layout-bg-right {
