@@ -132,7 +132,7 @@ body {
       .bottom {
         position: relative;
         z-index: 1;
-        height: calc(100vh - 2rem - 120px);
+        height: calc(100vh - 250px);
         overflow-y: auto;
         &::-webkit-scrollbar {
           width: 12px;
