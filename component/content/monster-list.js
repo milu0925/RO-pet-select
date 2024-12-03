@@ -59,12 +59,6 @@ export default function ContentMonsterList() {
     slidesToShow: 4,
     slidesToScroll: 4,
     variableWidth: true,
-    draggable: true,
-    swipe: true,
-    touchMove: true,
-    centerMode: false,
-    focusOnSelect: false,
-    touchThreshold: 5, // 調整滑動閾值
     responsive: [
       {
         breakpoint: 1024,
