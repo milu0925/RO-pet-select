@@ -228,7 +228,7 @@ body {
   position: relative;
   z-index: 1;
   background: rgb(var(--body));
-  border: 2px solid rgb(var(--black));
+  border: 3px solid rgb(var(--black));
   border-radius: 16px;
   box-shadow: 5px 5px rgba(var(--black), 0.5);
 }
@@ -736,7 +736,7 @@ body {
     }
     .s-content {
       top: 50px;
-      font-size: 16px;
+      font-size: 12px;
       border-radius: 2px;
     }
   }
@@ -744,13 +744,14 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 60px 60px auto;
-    grid-template-rows: 60px 60px 60px auto;
+    grid-template-rows: 60px 60px 60px 60px auto;
     grid-template-areas:
       "nav nav content"
       "btn1 btn2 content"
       "btn3 btn4 content"
+      "btn5 btn6 content"
       "select select content";
-    font-size: 24px;
+    font-size: 20px;
     color: black;
     .m-nav {
       cursor: pointer;
@@ -784,6 +785,20 @@ body {
     }
     .m-btn3 {
       grid-area: btn4;
+      border-radius: 2px;
+      &.active {
+        background: #ffcc00;
+      }
+    }
+    .m-btn4 {
+      grid-area: btn5;
+      border-radius: 2px;
+      &.active {
+        background: #ffcc00;
+      }
+    }
+    .m-btn5 {
+      grid-area: btn6;
       border-radius: 2px;
       &.active {
         background: #ffcc00;

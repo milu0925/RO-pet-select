@@ -2,7 +2,14 @@ import { useRouter } from "next/router";
 import { useCheck } from "@/hook/check-context";
 import { useSelect } from "@/hook/select-context";
 import React, { useState, useEffect, useRef } from "react";
-import { strengthen, enchant, refine, repair } from "../json/ro";
+import {
+  strengthen,
+  enchant,
+  refine,
+  repair,
+  protect,
+  other,
+} from "../json/ro";
 import Select from "../select";
 import Image from "next/image";
 export default function MonsterMobile() {
@@ -16,7 +23,7 @@ export default function MonsterMobile() {
   };
   // 獲取當前的數組數據
   const getActiveArray = () => {
-    const arrays = { strengthen, enchant, refine, repair };
+    const arrays = { strengthen, enchant, refine, repair, protect, other };
     return arrays[active] || [];
   };
 
@@ -25,6 +32,8 @@ export default function MonsterMobile() {
     { name: "enchant", short: "附", className: "m-btn2" },
     { name: "refine", short: "精", className: "m-btn3" },
     { name: "repair", short: "修", className: "m-btn4" },
+    { name: "protect", short: "保", className: "m-btn5" },
+    { name: "other", short: "寵", className: "m-btn6" },
   ];
   const router = useRouter();
 

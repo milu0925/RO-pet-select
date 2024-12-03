@@ -103,7 +103,7 @@ export default function ContentMonsterList() {
                   ? "修復"
                   : name === "protect"
                   ? "保護"
-                  : "其他"}
+                  : "寵物"}
               </button>
             ))}
             <div
