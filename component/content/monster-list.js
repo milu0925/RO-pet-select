@@ -53,12 +53,18 @@ export default function ContentMonsterList() {
 
   // scroll
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
+    speed: 300, // 減少速度
+    slidesToShow: 4,
+    slidesToScroll: 4,
     variableWidth: true,
+    draggable: true,
+    swipe: true,
+    touchMove: true,
+    centerMode: false,
+    focusOnSelect: false,
+    touchThreshold: 5, // 調整滑動閾值
   };
 
   // 手機板
