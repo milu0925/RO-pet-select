@@ -460,12 +460,12 @@ body {
       &:hover {
         background: rgb(var(--pink));
         border-radius: 0px;
-        &:first-child {
-          border-radius: 12px 12px 0 0;
-        }
-        &:last-child {
-          border-radius: 0 0 12px 12px;
-        }
+        // &:first-child {
+        //   border-radius: 12px 12px 0 0;
+        // }
+        // &:last-child {
+        //   border-radius: 0 0 12px 12px;
+        // }
       }
     }
   }
@@ -748,6 +748,7 @@ body {
       top: 50px;
       font-size: 12px;
       border-radius: 2px;
+      height: 300px;
     }
   }
   .mobile-block-m {
