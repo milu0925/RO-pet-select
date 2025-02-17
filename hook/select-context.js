@@ -41,7 +41,6 @@ export const SelectContext = ({ children }) => {
   const router = useRouter();
   useEffect(() => {
     setselects(["", "", "", ""]);
-    router.push(`/${activePage}`);
   }, [activePage]);
 
   return (
