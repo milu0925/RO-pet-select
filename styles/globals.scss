@@ -745,10 +745,22 @@ body {
       }
     }
     .s-content {
+      display: block;
       top: 50px;
       font-size: 12px;
       border-radius: 2px;
+      max-height: 300px; 
+      overflow: auto; 
+      height: auto;
+      div {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        height: 30px;
+        padding: 5px 20px;
+        border-radius: 0px;
     }
+  }
   }
   .mobile-block-m {
     width: 100%;
