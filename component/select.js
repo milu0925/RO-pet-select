@@ -41,6 +41,7 @@ export default function Select({ names, list, question }) {
     setIsOpen(false);
   };
   const [isOpen, setIsOpen] = useState(false);
+console.log(selects,'select');
 
   return (
     <div className="select">

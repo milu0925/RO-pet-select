@@ -3,15 +3,16 @@ import Select from "../select";
 import Card from "./card";
 import { ethnicity, props, shape } from "../json/ro";
 import FightMobile from "../mobile/fight-mobile";
-import { TiDelete } from "react-icons/ti";
 import { FaDeleteLeft } from "react-icons/fa6";
 import { skill2, skill3 } from "../json/ro";
-import { useRouter } from "next/router";
+import { useSelect } from "@/hook/select-context";
 export default function FightPet() {
   const [isMobile, setIsMobile] = useState(false);
+    const {  setselects } = useSelect();
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 576);
+      setselects([])
     };
     window.addEventListener("resize", handleResize);
     handleResize();

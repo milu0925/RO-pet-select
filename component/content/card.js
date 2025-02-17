@@ -4,7 +4,7 @@ import { useSelect } from "@/hook/select-context";
 
 export default function Card() {
   const { aid, handlepush } = useCheck();
-  const { currentM } = useSelect();
+  const { currentM } = useSelect(); // 顯示項目
 
   return (
     <div className="flex">
