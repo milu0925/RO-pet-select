@@ -1,8 +1,8 @@
 import Head from "next/head";
+import Image from "next/image";
 import { getdata } from "@/actions/beastmaster";
 import { useEffect, useState } from "react";
 import Select from "@/component/select";
-import Navbar from "@/component/navbar";
 import BeastmasterLayout from "@/component/beastmaster-layout";
 import { MdOutlineCancel } from "react-icons/md";
 import { FaDeleteLeft } from "react-icons/fa6";
