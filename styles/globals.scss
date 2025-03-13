@@ -185,6 +185,9 @@ body {
   border-radius: 50%;
   border: 3px solid black;
   background: #4459a8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   i {
     font-size: 36px;
   }
