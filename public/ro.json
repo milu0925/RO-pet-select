@@ -1,0 +1,2228 @@
+{
+    "monster": [
+        {
+            "name": "波利",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 1,
+            "type": "general",
+            "item": [
+                "天然銀礦"
+            ]
+        },
+        {
+            "name": "瘋兔",
+            "property": "無",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 2,
+            "type": "general",
+            "item": [
+                "菲弗灰燼"
+            ]
+        },
+        {
+            "name": "綠棉蟲",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 3,
+            "type": "general",
+            "item": [
+                "晶磁魚"
+            ]
+        },
+        {
+            "name": "蟲蛹",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 4,
+            "type": "general",
+            "item": [
+                "珊瑚",
+                "黑曜鯊"
+            ]
+        },
+        {
+            "name": "禿鷹",
+            "property": "風",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 5,
+            "type": "general",
+            "item": [
+                "精鋼",
+                "星辰花",
+                "海螺"
+            ]
+        },
+        {
+            "name": "蝗蟲",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 6,
+            "type": "general",
+            "item": [
+                "珊瑚",
+                "龍鱗草"
+            ]
+        },
+        {
+            "name": "小野豬",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 7,
+            "type": "general",
+            "item": [
+                "烏魯茲灰燼",
+                "硬鋁石",
+                "精銅"
+            ]
+        },
+        {
+            "name": "小雞",
+            "property": "火",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 8,
+            "type": "general",
+            "item": [
+                "碧玉藤",
+                "黑曜鯊",
+                "透輝石"
+            ]
+        },
+        {
+            "name": "沙漠幼犬",
+            "property": "火",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 9,
+            "type": "general",
+            "item": [
+                "透輝石",
+                "碧玉藤"
+            ]
+        },
+        {
+            "name": "盜蟲卵",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 10,
+            "type": "general",
+            "item": [
+                "螃蟹",
+                "海螺",
+                "龍鱗草"
+            ]
+        },
+        {
+            "name": "盜蟲",
+            "property": "無",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 11,
+            "type": "general",
+            "item": [
+                "銀礦",
+                "龍鱗草"
+            ]
+        },
+        {
+            "name": "吸血蝙蝠",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 12,
+            "type": "general",
+            "item": [
+                "晶磁魚",
+                "菲弗灰燼"
+            ]
+        },
+        {
+            "name": "漂浮蟲",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "植物",
+            "level": 13,
+            "type": "general",
+            "item": [
+                "黑曜鯊"
+            ]
+        },
+        {
+            "name": "白鼠",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 14,
+            "type": "general",
+            "item": [
+                "烏魯茲灰燼"
+            ]
+        },
+        {
+            "name": "瑪勒盜蟲",
+            "property": "暗",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 15,
+            "type": "general",
+            "item": [
+                "烏魯茲灰燼",
+                "透輝石",
+                "星辰花"
+            ]
+        },
+        {
+            "name": "毒魔菇",
+            "property": "毒",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 16,
+            "type": "general",
+            "item": [
+                "海螺"
+            ]
+        },
+        {
+            "name": "紅蝙蝠",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 17,
+            "type": "general",
+            "item": [
+                "硬鋁石",
+                "碧玉藤"
+            ]
+        },
+        {
+            "name": "蜂兵",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 18,
+            "type": "general",
+            "item": [
+                "菲弗灰燼",
+                "天然銀礦",
+                "晶磁魚"
+            ]
+        },
+        {
+            "name": "蝸牛",
+            "property": "水",
+            "body": "大",
+            "ethnicity": "昆蟲",
+            "level": 19,
+            "type": "general",
+            "item": [
+                "螃蟹",
+                "精銅",
+                "珊瑚"
+            ]
+        },
+        {
+            "name": "克瑞米",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 20,
+            "type": "general",
+            "item": [
+                "星辰花",
+                "螃蟹",
+                "硬鋁石"
+            ]
+        },
+        {
+            "name": "獵蠅",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 21,
+            "type": "general",
+            "item": [
+                "珊瑚"
+            ]
+        },
+        {
+            "name": "曼陀羅花",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 22,
+            "type": "general",
+            "item": [
+                "精銅",
+                "天然銀礦",
+                "碧玉藤"
+            ]
+        },
+        {
+            "name": "瓢蟲",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 23,
+            "type": "general",
+            "item": [
+                "螃蟹",
+                "黑曜鯊"
+            ]
+        },
+        {
+            "name": "赤蒼蠅",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 24,
+            "type": "general",
+            "item": [
+                "透輝石",
+                "硬鋁石"
+            ]
+        },
+        {
+            "name": "艾斯蜘蛛",
+            "property": "毒",
+            "body": "大",
+            "ethnicity": "昆蟲",
+            "level": 25,
+            "type": "general",
+            "item": [
+                "海螺"
+            ]
+        },
+        {
+            "name": "噬人花",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "植物",
+            "level": 26,
+            "type": "general",
+            "item": [
+                "黑曜鯊",
+                "龍鱗草",
+                "晶磁魚"
+            ]
+        },
+        {
+            "name": "土撥鼠",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 27,
+            "type": "general",
+            "item": [
+                "菲弗灰燼",
+                "海螺"
+            ]
+        },
+        {
+            "name": "基爾瑟",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 28,
+            "type": "general",
+            "item": [
+                "烏魯茲灰燼"
+            ]
+        },
+        {
+            "name": "邪骸礦工",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 29,
+            "type": "general",
+            "item": [
+                "星辰花",
+                "晶磁魚",
+                "天然銀礦"
+            ]
+        },
+        {
+            "name": "麥斯特",
+            "property": "毒",
+            "body": "大",
+            "ethnicity": "無形",
+            "level": 30,
+            "type": "general",
+            "item": [
+                "硬鋁石",
+                "碧玉藤",
+                "珊瑚"
+            ]
+        },
+        {
+            "name": "變異幽浮水母",
+            "property": "不死",
+            "body": "小",
+            "ethnicity": "不死",
+            "level": 31,
+            "type": "general",
+            "item": [
+                "碧玉藤",
+                "透輝石",
+                "龍鱗草"
+            ]
+        },
+        {
+            "name": "短劍海盜骷髏",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 31,
+            "type": "general",
+            "item": [
+                "硬鋁石",
+                "猛瑪魚",
+                "卡納茲結晶"
+            ]
+        },
+        {
+            "name": "羅達蛙",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "魚貝",
+            "level": 32,
+            "type": "general",
+            "item": [
+                "萊德赫結晶",
+                "安斯茲碎片"
+            ]
+        },
+        {
+            "name": "蘑菇",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 32,
+            "type": "general",
+            "item": [
+                "猛瑪魚",
+                "黑曜鯊"
+            ]
+        },
+        {
+            "name": "石斧海盜骷髏",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 33,
+            "type": "general",
+            "item": [
+                "黑曜鯊",
+                "星辰花"
+            ]
+        },
+        {
+            "name": "腐屍",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 33,
+            "type": "general",
+            "item": [
+                "吞岩魚",
+                "安斯茂碎片",
+                "萊德赫結晶"
+            ]
+        },
+        {
+            "name": "庫克雷",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 34,
+            "type": "general",
+            "item": [
+                "尖嘴魚"
+            ]
+        },
+        {
+            "name": "海葵",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "植物",
+            "level": 34,
+            "type": "general",
+            "item": [
+                "天然金礦"
+            ]
+        },
+        {
+            "name": "邪骸海盜",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 35,
+            "type": "general",
+            "item": [
+                "精銅",
+                "碧玉藤",
+                "晶磁魚"
+            ]
+        },
+        {
+            "name": "白幽靈",
+            "property": "念",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 35,
+            "type": "general",
+            "item": [
+                "突里薩茲碎片",
+                "精銅"
+            ]
+        },
+        {
+            "name": "綠蒼蠅",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 36,
+            "type": "general",
+            "item": [
+                "卡納茲結晶",
+                "突里薩茲碎片",
+                "碧玉藤"
+            ]
+        },
+        {
+            "name": "刺蝟蟲",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 36,
+            "type": "general",
+            "item": [
+                "星辰花"
+            ]
+        },
+        {
+            "name": "松鼠",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 37,
+            "type": "general",
+            "item": [
+                "透輝石",
+                "吞岩魚",
+                "星辰花"
+            ]
+        },
+        {
+            "name": "搖滾蝗蟲",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 37,
+            "type": "general",
+            "item": [
+                "龍鱗草",
+                "精銅"
+            ]
+        },
+        {
+            "name": "蒼蠅",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 38,
+            "type": "general",
+            "item": [
+                "尖嘴魚",
+                "卡納茲結晶",
+                "吞岩魚"
+            ]
+        },
+        {
+            "name": "溜溜猴",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 38,
+            "type": "general",
+            "item": [
+                "萊德赫結晶"
+            ]
+        },
+        {
+            "name": "野豬",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 39,
+            "type": "general",
+            "item": [
+                "天然金礦",
+                "硬鋁石",
+                "透輝石"
+            ]
+        },
+        {
+            "name": "螳螂",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 39,
+            "type": "general",
+            "item": [
+                "龍鱗草"
+            ]
+        },
+        {
+            "name": "艾吉歐蜈蚣",
+            "property": "毒",
+            "body": "大",
+            "ethnicity": "昆蟲",
+            "level": 40,
+            "type": "general",
+            "item": [
+                "晶磁魚"
+            ]
+        },
+        {
+            "name": "雪熊",
+            "property": "無",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 40,
+            "type": "general",
+            "item": [
+                "安斯茲碎片",
+                "晶磁魚"
+            ]
+        },
+        {
+            "name": "土波利",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 41,
+            "type": "general",
+            "item": [
+                "天藍石",
+                "天然金礦"
+            ]
+        },
+        {
+            "name": "大嘴鳥蛋",
+            "property": "無",
+            "body": "小",
+            "ethnicity": "無形",
+            "level": 41,
+            "type": "general",
+            "item": [
+                "丌尤精髓",
+                "吞岩魚"
+            ]
+        },
+        {
+            "name": "摩卡",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "植物",
+            "level": 42,
+            "type": "general",
+            "item": [
+                "安斯茲碎片",
+                "軟鋁石",
+                "天藍石"
+            ]
+        },
+        {
+            "name": "蛋殼小雞",
+            "property": "火",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 42,
+            "type": "general",
+            "item": [
+                "白晶",
+                "水晶鰭魚",
+                "尖嘴魚"
+            ]
+        },
+        {
+            "name": "大嘴鳥",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 43,
+            "type": "general",
+            "item": [
+                "黑暗煌石",
+                "猛瑪魚",
+                "軟鋁石"
+            ]
+        },
+        {
+            "name": "重金屬蝗蟲",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 43,
+            "type": "general",
+            "item": [
+                "水晶鰭魚",
+                "惡魔魚"
+            ]
+        },
+        {
+            "name": "毒蛇",
+            "property": "毒",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 44,
+            "type": "general",
+            "item": [
+                "鐵皮樹",
+                "水晶刺魚",
+                "霜雪葉"
+            ]
+        },
+        {
+            "name": "蠍子",
+            "property": "火",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 44,
+            "type": "general",
+            "item": [
+                "火蛇瓜"
+            ]
+        },
+        {
+            "name": "巨石怪",
+            "property": "無",
+            "body": "大",
+            "ethnicity": "無形",
+            "level": 45,
+            "type": "general",
+            "item": [
+                "彩虹礦石"
+            ]
+        },
+        {
+            "name": "魔鍋蛋",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 45,
+            "type": "general",
+            "item": [
+                "尖嘴魚",
+                "丌尤精髓",
+                "白晶"
+            ]
+        },
+        {
+            "name": "蚯蚓",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 46,
+            "type": "general",
+            "item": [
+                "猛瑪魚",
+                "蓋柏精髓"
+            ]
+        },
+        {
+            "name": "沙漠之狼",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 46,
+            "type": "general",
+            "item": [
+                "惡魔魚"
+            ]
+        },
+        {
+            "name": "傘蜥",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 47,
+            "type": "general",
+            "item": [
+                "蓋柏精髓"
+            ]
+        },
+        {
+            "name": "卷甲蟲",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 47,
+            "type": "general",
+            "item": [
+                "火鳳凰魚",
+                "黑暗煌石"
+            ]
+        },
+        {
+            "name": "黑蛇",
+            "property": "毒",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 48,
+            "type": "general",
+            "item": [
+                "天然金礦",
+                "彩虹礦石"
+            ]
+        },
+        {
+            "name": "黑狐",
+            "property": "暗",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 48,
+            "type": "general",
+            "item": [
+                "吞岩魚"
+            ]
+        },
+        {
+            "name": "木乃伊",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 49,
+            "type": "general",
+            "item": [
+                "龍鰻",
+                "水晶刺魚",
+                "安斯茲碎片"
+            ]
+        },
+        {
+            "name": "畢萊特",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 49,
+            "type": "general",
+            "item": [
+                "黑鋁",
+                "突里薩茲碎片"
+            ]
+        },
+        {
+            "name": "蛇女伊絲",
+            "property": "暗",
+            "body": "大",
+            "ethnicity": "惡魔",
+            "level": 50,
+            "type": "general",
+            "item": [
+                "透明晶石"
+            ]
+        },
+        {
+            "name": "米洛斯",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 50,
+            "type": "general",
+            "item": [
+                "突里薩茲碎片",
+                "霜雪葉",
+                "火鳳凰魚"
+            ]
+        },
+        {
+            "name": "白蟻",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 51,
+            "type": "general",
+            "item": [
+                "惡魔魚",
+                "天然銥礦"
+            ]
+        },
+        {
+            "name": "螞蟻幼蟲",
+            "property": "無",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 51,
+            "type": "general",
+            "item": [
+                "黑鋁"
+            ]
+        },
+        {
+            "name": "工蟻",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 52,
+            "type": "general",
+            "item": [
+                "霜雪葉",
+                "鐵錘魚"
+            ]
+        },
+        {
+            "name": "兵蟻",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 52,
+            "type": "general",
+            "item": [
+                "蓋柏精髓",
+                "黑鋁",
+                "丌尤精髓"
+            ]
+        },
+        {
+            "name": "黑蟻",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 53,
+            "type": "general",
+            "item": [
+                "提瓦茲圓盤",
+                "透明晶石",
+                "馬納茲圓盤"
+            ]
+        },
+        {
+            "name": "傑洛米",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 53,
+            "type": "general",
+            "item": [
+                "軟鋁石",
+                "蓋柏精髓"
+            ]
+        },
+        {
+            "name": "諾可伊",
+            "property": "暗",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 54,
+            "type": "general",
+            "item": [
+                "櫻桃魚",
+                "龍鰻",
+                "天藍石"
+            ]
+        },
+        {
+            "name": "瑪律杜克",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 54,
+            "type": "general",
+            "item": [
+                "火蛇瓜",
+                "彩虹礦石"
+            ]
+        },
+        {
+            "name": "帕莎納",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 55,
+            "type": "general",
+            "item": [
+                "火鳳凰魚"
+            ]
+        },
+        {
+            "name": "安畢斯",
+            "property": "不死",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 55,
+            "type": "general",
+            "item": [
+                "透明晶石"
+            ]
+        },
+        {
+            "name": "螃蟹",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "魚貝",
+            "level": 56,
+            "type": "general",
+            "item": [
+                "天藍石"
+            ]
+        },
+        {
+            "name": "水母",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "植物",
+            "level": 56,
+            "type": "general",
+            "item": [
+                "龍鰻",
+                "鐵錘魚",
+                "火蛇瓜"
+            ]
+        },
+        {
+            "name": "卡那多斯",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "魚貝",
+            "level": 57,
+            "type": "general",
+            "item": [
+                "水晶刺魚",
+                "黑暗煌石"
+            ]
+        },
+        {
+            "name": "劍魚",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "魚貝",
+            "level": 57,
+            "type": "general",
+            "item": [
+                "彩虹礦石"
+            ]
+        },
+        {
+            "name": "氣泡蟲",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "植物",
+            "level": 58,
+            "type": "general",
+            "item": [
+                "黑暗煌石",
+                "霧靄水母",
+                "惡魔魚"
+            ]
+        },
+        {
+            "name": "迪奧斯",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "魚貝",
+            "level": 58,
+            "type": "general",
+            "item": [
+                "水晶鰭魚",
+                "白晶"
+            ]
+        },
+        {
+            "name": "異變魚",
+            "property": "水",
+            "body": "大",
+            "ethnicity": "魚貝",
+            "level": 59,
+            "type": "general",
+            "item": [
+                "鐵皮樹"
+            ]
+        },
+        {
+            "name": "人魚",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "魚貝",
+            "level": 59,
+            "type": "general",
+            "item": [
+                "天然銥礦",
+                "馬納茲圓盤",
+                "水晶鰭魚"
+            ]
+        },
+        {
+            "name": "烏賊",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "魚貝",
+            "level": 60,
+            "type": "general",
+            "item": [
+                "丌尤精髓",
+                "軟鋁石"
+            ]
+        },
+        {
+            "name": "馬克",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "魚貝",
+            "level": 60,
+            "type": "general",
+            "item": [
+                "白晶",
+                "霧靄水母",
+                "提瓦茲圓盤"
+            ]
+        },
+        {
+            "name": "樹精",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 61,
+            "type": "general",
+            "item": [
+                "霧靄水母",
+                "黑暗煌石"
+            ]
+        },
+        {
+            "name": "森靈",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 61,
+            "type": "general",
+            "item": [
+                "黑暗煌石",
+                "陰陽苜蓿"
+            ]
+        },
+        {
+            "name": "波波利",
+            "property": "毒",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 62,
+            "type": "general",
+            "item": [
+                "霧水母",
+                "彩虹礦石",
+                "馬納茲圓盤"
+            ]
+        },
+        {
+            "name": "狸貓",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 62,
+            "type": "general",
+            "item": [
+                "翡翠鯉",
+                "天然銥礦",
+                "陰陽苜蓿"
+            ]
+        },
+        {
+            "name": "大腳熊",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 63,
+            "type": "general",
+            "item": [
+                "斐楊翠玉蝦",
+                "電氣石",
+                "樹精嫩芽"
+            ]
+        },
+        {
+            "name": "浮勒盜蟲",
+            "property": "暗",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 63,
+            "type": "general",
+            "item": [
+                "彩虹礦石",
+                "樹精嫩芽"
+            ]
+        },
+        {
+            "name": "狼",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 64,
+            "type": "general",
+            "item": [
+                "霧水母",
+                "大玉竹"
+            ]
+        },
+        {
+            "name": "青蛇",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 64,
+            "type": "general",
+            "item": [
+                "透明晶石",
+                "水鋁石"
+            ]
+        },
+        {
+            "name": "鍬形蟲",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "昆蟲",
+            "level": 65,
+            "type": "general",
+            "item": [
+                "暮色魚",
+                "天然銥礦",
+                "陽極符文剛玉"
+            ]
+        },
+        {
+            "name": "九尾狐",
+            "property": "火",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 65,
+            "type": "general",
+            "item": [
+                "斐楊翠玉蝦",
+                "水鋁石"
+            ]
+        },
+        {
+            "name": "長老樹精",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "植物",
+            "level": 66,
+            "type": "general",
+            "item": [
+                "珊瑚鰻",
+                "玉鋼"
+            ]
+        },
+        {
+            "name": "將軍魔碑",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "無形",
+            "level": 66,
+            "type": "general",
+            "item": [
+                "鐵錘魚",
+                "紫晶",
+                "陽極符文剛玉"
+            ]
+        },
+        {
+            "name": "轉轉蛋",
+            "property": "念",
+            "body": "中",
+            "ethnicity": "無形",
+            "level": 67,
+            "type": "general",
+            "item": [
+                "鐵錘魚",
+                "透明晶石"
+            ]
+        },
+        {
+            "name": "土人",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 67,
+            "type": "general",
+            "item": [
+                "霧靄水母",
+                "提瓦茲圓盤"
+            ]
+        },
+        {
+            "name": "邪骸士兵",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 68,
+            "type": "general",
+            "item": [
+                "珊瑚鰻",
+                "電氣石",
+                "提瓦茲圓盤"
+            ]
+        },
+        {
+            "name": "邪骸弓箭手",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 68,
+            "type": "general",
+            "item": [
+                "櫻桃魚",
+                "馬納茲圓盤"
+            ]
+        },
+        {
+            "name": "僵屍",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 69,
+            "type": "general",
+            "item": [
+                "水鋁石",
+                "大玉竹"
+            ]
+        },
+        {
+            "name": "邪骸戰士",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 69,
+            "type": "general",
+            "item": [
+                "翡翠鯉",
+                "陰極符文剛玉"
+            ]
+        },
+        {
+            "name": "妖道",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 70,
+            "type": "general",
+            "item": [
+                "櫻桃魚",
+                "玉鋼",
+                "大玉竹"
+            ]
+        },
+        {
+            "name": "鬼女",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "惡魔",
+            "level": 70,
+            "type": "general",
+            "item": [
+                "暮色魚",
+                "紫晶",
+                "陰極符文剛玉"
+            ]
+        },
+        {
+            "name": "鏈錘哥布靈",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 71,
+            "type": "general",
+            "item": [
+                "飛龍長牙"
+            ]
+        },
+        {
+            "name": "弓箭哥布靈",
+            "property": "毒",
+            "body": "小",
+            "ethnicity": "人",
+            "level": 71,
+            "type": "general",
+            "item": [
+                "地龍鱗片"
+            ]
+        },
+        {
+            "name": "大斧哥布靈",
+            "property": "毒",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 72,
+            "type": "general",
+            "item": [
+                "飛龍長牙"
+            ]
+        },
+        {
+            "name": "直升機哥布靈",
+            "property": "風",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 72,
+            "type": "general",
+            "item": [
+                "惡魔之角"
+            ]
+        },
+        {
+            "name": "刺刀哥布靈",
+            "property": "風",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 73,
+            "type": "general",
+            "item": [
+                "地龍鱗片"
+            ]
+        },
+        {
+            "name": "獸人嬰兒",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "人",
+            "level": 73,
+            "type": "general",
+            "item": [
+                "幻影草"
+            ]
+        },
+        {
+            "name": "獸人戰士",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 74,
+            "type": "general",
+            "item": [
+                "空燃花"
+            ]
+        },
+        {
+            "name": "獸人女戰士",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 74,
+            "type": "general",
+            "item": [
+                "飛龍長牙"
+            ]
+        },
+        {
+            "name": "獸人戰士長",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 75,
+            "type": "general",
+            "item": [
+                "黃金藤"
+            ]
+        },
+        {
+            "name": "南瓜先生",
+            "property": "火",
+            "body": "小",
+            "ethnicity": "無形",
+            "level": 75,
+            "type": "general",
+            "item": [
+                "地龍鱗片"
+            ]
+        },
+        {
+            "name": "小惡魔",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 76,
+            "type": "general",
+            "item": [
+                "地龍鱗片"
+            ]
+        },
+        {
+            "name": "風魔巫師",
+            "property": "風",
+            "body": "中",
+            "ethnicity": "惡魔",
+            "level": 76,
+            "type": "general",
+            "item": [
+                "飛龍長牙"
+            ]
+        },
+        {
+            "name": "綠腐屍",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 77,
+            "type": "general",
+            "item": [
+                "惡魔之角"
+            ]
+        },
+        {
+            "name": "魁儡娃娃",
+            "property": "念",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 77,
+            "type": "general",
+            "item": [
+                "空燃花"
+            ]
+        },
+        {
+            "name": "刺錘犬妖",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 78,
+            "type": "general",
+            "item": [
+                "惡魔之角"
+            ]
+        },
+        {
+            "name": "幽靈劍士",
+            "property": "暗",
+            "body": "大",
+            "ethnicity": "惡魔",
+            "level": 78,
+            "type": "general",
+            "item": [
+                "飛龍長牙"
+            ]
+        },
+        {
+            "name": "畢帝特地龍",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "龍",
+            "level": 79,
+            "type": "general",
+            "item": [
+                "惡魔之角"
+            ]
+        },
+        {
+            "name": "榔頭犬妖",
+            "property": "毒",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 79,
+            "type": "general",
+            "item": [
+                "地龍鱗片"
+            ]
+        },
+        {
+            "name": "畢帝特飛龍",
+            "property": "風",
+            "body": "大",
+            "ethnicity": "龍",
+            "level": 80,
+            "type": "general",
+            "item": [
+                "幻影草"
+            ]
+        },
+        {
+            "name": "小巴風特",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 80,
+            "type": "general",
+            "item": [
+                "惡魔之角"
+            ]
+        },
+        {
+            "name": "野豬王",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 30,
+            "type": "special",
+            "item": [
+                "星辰花"
+            ]
+        },
+        {
+            "name": "黃金蟲",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "昆蟲",
+            "level": 30,
+            "type": "special",
+            "item": [
+                "龍鱗草"
+            ]
+        },
+        {
+            "name": "礦工隊長",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 40,
+            "type": "special",
+            "item": [
+                "突里薩茲碎片"
+            ]
+        },
+        {
+            "name": "蜂后",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 40,
+            "type": "special",
+            "item": [
+                "黑曜鯊"
+            ]
+        },
+        {
+            "name": "皮里恩",
+            "property": "無",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 50,
+            "type": "special",
+            "item": [
+                "龍鰻"
+            ]
+        },
+        {
+            "name": "狂暴蟻后",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "昆蟲",
+            "level": 50,
+            "type": "special",
+            "item": [
+                "水晶鰭魚"
+            ]
+        },
+        {
+            "name": "法老王",
+            "property": "暗",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 60,
+            "type": "special",
+            "item": [
+                "鐵皮樹"
+            ]
+        },
+        {
+            "name": "魔鬼大烏賊",
+            "property": "水",
+            "body": "大",
+            "ethnicity": "魚貝",
+            "level": 60,
+            "type": "special",
+            "item": [
+                "火鳳凰魚"
+            ]
+        },
+        {
+            "name": "僵屍姊姊",
+            "property": "念",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 70,
+            "type": "special",
+            "item": [
+                "暮色魚"
+            ]
+        },
+        {
+            "name": "虎王",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 70,
+            "type": "special",
+            "item": [
+                "玉鋼"
+            ]
+        },
+        {
+            "name": "獸人英雄",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 80,
+            "type": "special",
+            "item": [
+                "天然鈦礦"
+            ]
+        },
+        {
+            "name": "獸人酋長",
+            "property": "地",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 80,
+            "type": "special",
+            "item": [
+                "魔法翻車魚"
+            ]
+        },
+        {
+            "name": "藍瘋兔",
+            "property": "無",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 30,
+            "type": "special",
+            "item": [
+                "透輝石"
+            ]
+        },
+        {
+            "name": "龍蠅",
+            "property": "風",
+            "body": "小",
+            "ethnicity": "昆蟲",
+            "level": 30,
+            "type": "special",
+            "item": [
+                "菲弗灰燼"
+            ]
+        },
+        {
+            "name": "波利之王",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 40,
+            "type": "special",
+            "item": [
+                "天然金礦"
+            ]
+        },
+        {
+            "name": "幽靈波利",
+            "property": "念",
+            "body": "中",
+            "ethnicity": "惡魔",
+            "level": 40,
+            "type": "special",
+            "item": [
+                "猛瑪魚"
+            ]
+        },
+        {
+            "name": "惡魔波利",
+            "property": "暗",
+            "body": "中",
+            "ethnicity": "惡魔",
+            "level": 50,
+            "type": "special",
+            "item": [
+                "透明晶石"
+            ]
+        },
+        {
+            "name": "天使波利",
+            "property": "聖",
+            "body": "中",
+            "ethnicity": "天使",
+            "level": 50,
+            "type": "special",
+            "item": [
+                "火蛇瓜"
+            ]
+        },
+        {
+            "name": "大腳龍蝦",
+            "property": "水",
+            "body": "大",
+            "ethnicity": "魚貝",
+            "level": 60,
+            "type": "special",
+            "item": [
+                "火鳳凰魚"
+            ]
+        },
+        {
+            "name": "蛙王",
+            "property": "水",
+            "body": "小",
+            "ethnicity": "魚貝",
+            "level": 60,
+            "type": "special",
+            "item": [
+                "櫻桃魚"
+            ]
+        },
+        {
+            "name": "靄瘟摩爾",
+            "property": "毒",
+            "body": "中",
+            "ethnicity": "植物",
+            "level": 25,
+            "type": "special",
+            "item": [
+                "烏魯茲灰燼"
+            ]
+        },
+        {
+            "name": "海盜之王",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 40,
+            "type": "special",
+            "item": [
+                "尖嘴魚"
+            ]
+        },
+        {
+            "name": "俄賽里斯",
+            "property": "不死",
+            "body": "中",
+            "ethnicity": "不死",
+            "level": 50,
+            "type": "special",
+            "item": [
+                "鐵皮樹"
+            ]
+        },
+        {
+            "name": "遠古海神",
+            "property": "水",
+            "body": "大",
+            "ethnicity": "魚貝",
+            "level": 60,
+            "type": "special",
+            "item": [
+                "水晶刺魚"
+            ]
+        },
+        {
+            "name": "月夜貓",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "惡魔",
+            "level": 70,
+            "type": "special",
+            "item": [
+                "提瓦茲圓盤"
+            ]
+        },
+        {
+            "name": "流浪之狼",
+            "property": "風",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 70,
+            "type": "special",
+            "item": [
+                "天然銥礦"
+            ]
+        },
+        {
+            "name": "死亡藤蔓",
+            "property": "暗",
+            "body": "中",
+            "ethnicity": "惡魔",
+            "level": 70,
+            "type": "special",
+            "item": [
+                "斐楊翠玉蝦"
+            ]
+        },
+        {
+            "name": "庫布靈",
+            "property": "風",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 80,
+            "type": "special",
+            "item": [
+                "天然鈦礦"
+            ]
+        },
+        {
+            "name": "犬妖首領",
+            "property": "風",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 80,
+            "type": "special",
+            "item": [
+                "魔法翻車魚"
+            ]
+        },
+        {
+            "name": "黑豆爵士",
+            "property": "暗",
+            "body": "小",
+            "ethnicity": "惡魔",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "天然金礦"
+            ]
+        },
+        {
+            "name": "魯道夫二世",
+            "property": "地",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "火鳳凰魚"
+            ]
+        },
+        {
+            "name": "禮帽波利",
+            "property": "無",
+            "body": "小",
+            "ethnicity": "植物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "晶磁魚"
+            ]
+        },
+        {
+            "name": "殼殼",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "天然銀礦"
+            ]
+        },
+        {
+            "name": "狸之助",
+            "property": "聖",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "黑曜鯊"
+            ]
+        },
+        {
+            "name": "芝士喵喵堡",
+            "property": "火",
+            "body": "大",
+            "ethnicity": "天使",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "暮色魚"
+            ]
+        },
+        {
+            "name": "岩精靈諾姆",
+            "property": "地",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "天然銥礦"
+            ]
+        },
+        {
+            "name": "水精靈奧莉拉",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "斐楊翠玉蝦"
+            ]
+        },
+        {
+            "name": "火精靈古莉特",
+            "property": "火",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "暮色魚"
+            ]
+        },
+        {
+            "name": "風精靈西爾芙",
+            "property": "風",
+            "body": "中",
+            "ethnicity": "人",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "玉鋼"
+            ]
+        },
+        {
+            "name": "月兔親友團",
+            "property": "念",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "火鳳凰魚"
+            ]
+        },
+        {
+            "name": "球球",
+            "property": "無",
+            "body": "大",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "暮色魚"
+            ]
+        },
+        {
+            "name": "年獸",
+            "property": "無",
+            "body": "大",
+            "ethnicity": "龍",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "天然鈦礦"
+            ]
+        },
+        {
+            "name": "年獸寶寶",
+            "property": "無",
+            "body": "小",
+            "ethnicity": "龍",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "飛龍長牙"
+            ]
+        },
+        {
+            "name": "糖糖",
+            "property": "念",
+            "body": "小",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "暮色魚"
+            ]
+        },
+        {
+            "name": "丘比巴拉",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "暮色魚"
+            ]
+        },
+        {
+            "name": "黃金王戈登",
+            "property": "無",
+            "body": "大",
+            "ethnicity": "植物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "天然鈦礦"
+            ]
+        }
+    ],
+    "property": [
+        "無",
+        "水",
+        "地",
+        "風",
+        "火",
+        "毒",
+        "念",
+        "聖",
+        "暗",
+        "不死"
+    ],
+    "body": [
+        "小",
+        "中",
+        "大"
+    ],
+    "ethnicity": [
+        "天使",
+        "惡魔",
+        "無形",
+        "昆蟲",
+        "魚貝",
+        "人",
+        "不死",
+        "龍",
+        "植物",
+        "動物"
+    ],
+    "strengthen": [
+        "珊瑚",
+        "螃蟹",
+        "海螺",
+        "猛瑪魚",
+        "尖嘴魚",
+        "吞岩魚",
+        "櫻桃魚",
+        "霧靄水母",
+        "鐵錘魚",
+        "地龍鱗片",
+        "飛龍長牙",
+        "惡魔之角",
+        "天然銀礦",
+        "天然金礦",
+        "天然銥礦",
+        "天然鈦礦"
+    ],
+    "enchant": [
+        "晶磁魚",
+        "龍鰻",
+        "龍鱗草",
+        "鐵皮樹",
+        "碧玉藤",
+        "火蛇瓜",
+        "星辰花",
+        "霜雪葉",
+        "大玉竹",
+        "陰陽苜蓿",
+        "樹精嫩芽",
+        "斐楊翠玉蝦",
+        "幻影草",
+        "空燃花",
+        "黃金藤",
+        "魔法翻車魚"
+    ],
+    "refine": [
+        "黑曜鯊",
+        "水晶刺魚",
+        "暮色魚",
+        "精銅",
+        "黑鋁",
+        "秘銀",
+        "透輝石",
+        "天藍石",
+        "電氣石",
+        "硬鋁石",
+        "軟鋁石",
+        "水鋁石"
+    ],
+    "repair": [
+        "白晶",
+        "紫晶",
+        "惡魔魚",
+        "火鳳凰魚",
+        "水晶鰭魚",
+        "霧水母",
+        "翡翠鯉",
+        "珊瑚鰻",
+        "黑暗煌石",
+        "透明晶石",
+        "彩虹礦石"
+    ],
+    "other": [
+        "菲弗灰燼",
+        "烏魯茲灰燼",
+        "萊德赫結晶",
+        "卡納茲結晶",
+        "安斯茲碎片",
+        "突里薩茲碎片",
+        "丌尤精髓",
+        "蓋柏精髓",
+        "提瓦茲圓盤",
+        "馬納茲圓盤",
+        "陽極符文剛玉",
+        "陰極符文剛玉"
+    ],
+    "skillTwo": {
+        "無": "魔法攻擊/物理攻擊+4%",
+        "火": "最終暴擊+4%",
+        "水": "治療與受到治療+4%",
+        "風": "最終攻速+15%",
+        "地": "最終物防+10%",
+        "毒": "最終魔防+10%",
+        "聖": "聖屬性傷害+7%",
+        "暗": "魔法反射+10%",
+        "念": "最終傷害+4%",
+        "不死系": "物理反傷+10%",
+        "大": "最大生命+4%",
+        "中": "最終傷害減免+4%",
+        "小": "最終閃避+4%",
+        "天使": "每一個友方被擊敗，全員+4%最終傷害",
+        "惡魔": "生命低於50%時物理吸血、魔法吸血6%",
+        "無形": "戰鬥開始15秒內，最終攻速+20%",
+        "昆蟲": "生命高於50%時最終攻速+20%",
+        "魚貝": "戰鬥開始15秒內最終傷害減免+10%",
+        "人": "戰鬥開始15秒內負面抵抗+10%",
+        "不死": "生命低於50%最終攻速+30%",
+        "動物": "戰鬥開始15秒內最終爆擊+10%",
+        "植物": "生命低於50%時恢復6%最大生命值，每隻寵物在場上使用一次",
+        "龍": "生命低於50%物理攻擊和魔法攻擊增加30%"
+    },
+    "skillThree": {
+        "無": "魔法攻擊/物理攻擊+8%",
+        "火": "最終暴擊+8%",
+        "水": "治療與受到治療+8%",
+        "風": "最終攻速+26%",
+        "地": "最終物防+15%",
+        "毒": "最終魔防+15%",
+        "聖": "聖屬性傷害+12%",
+        "暗": "魔法反射+15%",
+        "念": "最終傷害+8%",
+        "不死系": "物理反傷+15%",
+        "大": "最大生命+8%",
+        "中": "最終傷害減免+8%",
+        "小": "最終閃避+8%",
+        "天使": "每一個友方被擊敗，全員+6%最終傷害",
+        "惡魔": "生命低於50%時物理吸血、魔法吸血10%",
+        "無形": "戰鬥開始15秒內，最終攻速+55%",
+        "昆蟲": "生命高於50%時最終攻速+36%",
+        "魚貝": "戰鬥開始15秒內最終傷害減免+15%",
+        "人": "戰鬥開始15秒內負面抵抗+15%",
+        "不死": "生命低於50%最終攻速+55%",
+        "動物": "戰鬥開始15秒內最終爆擊+15%",
+        "植物": "生命低於50%時恢復10%最大生命值，每隻寵物在場上使用一次",
+        "龍": "生命低於50%物理攻擊和魔法攻擊增加55%"
+    },
+    "specialskill": {
+        "skill1": "全隊技能冷卻減少4%，全員物理攻擊/魔法攻擊增加2%'",
+        "skill2": "全隊技能冷卻減少6%，全員物理攻擊/魔法攻擊增加4%",
+        "skill3": "全隊技能冷卻減少8%，全員物理攻擊/魔法攻擊增加6%",
+        "skill4": "全隊技能冷卻減少10%，全員物理攻擊/魔法攻擊增加8%",
+        "skill5": "全隊技能冷卻減少12%，全員物理攻擊/魔法攻擊增加10%"
+    }
+}
