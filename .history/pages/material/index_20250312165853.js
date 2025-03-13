@@ -69,8 +69,8 @@ export default function Material() {
         <div data-name="repair" onClick={handleClick} className={`pointer py-2 px-5 ${select.select1 === 'repair' && 'frame active'}`}>修復</div>
         <div data-name="other" onClick={handleClick} className={`pointer py-2 px-5 ${select.select1 === 'other' && 'frame active'}`}>寵物</div>
         <Slider {...settings}>
-            {data.originaldata[select.select1]?.map((v,index)=>(
-              <div key={index} className={`material-card black-block m-2 text-center ${select.select2 === v && 'active'}`} data-item={v} onClick={handleClick}>
+            {data.originaldata[select.select1]?.map((v)=>(
+              <div className={`material-card black-block m-2 text-center ${select.select2 === v && 'active'}`} data-item={v} onClick={handleClick}>
               <div className="material-card-img"><Image
                   alt="material"
                   src={`/images/material/${v}.png`}
@@ -82,13 +82,7 @@ export default function Material() {
         </Slider>
           {data.monsterdata.filter((v) => v.item.includes(select.select2)).map((item,index) => (
             <div className={`black-block monster-card ${click?.name === item.name ? 'active':''}`} key={index} data-click={item.name} onClick={()=>setClick(item)}>
-              <Image
-               className="img"
-                  alt="image"
-                  src={`/images/${item.name}.png`}
-                  width={50}
-                  height={50}
-                />
+              <img className="img" alt="image" src={`/images/${item.name}.png`} />
               <div className="prop">
                 <span>{item.property}</span>
                 <span>{item.body}</span>

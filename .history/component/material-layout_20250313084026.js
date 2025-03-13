@@ -14,7 +14,7 @@ export default function MaterialLayout({ children }) {
           <div className="col-6 col-md-2 text-nowrap">{children[4]}</div>
         </div>
             <div className='p-3 px-4 rounded'>{children[5]}</div>
-            <div className='p-3 black-block monster-scroll'><div className='d-flex flex-wrap gap-3'>{children[6]}</div></div>
+            <div className='p-3 black-block monster-scroll h-100'><div className='d-flex flex-wrap gap-3'>{children[6]}</div></div>
         </div>
         <div className="col-12 col-md-4 d-flex flex-column justify-content-between">
           <div className='block'></div>

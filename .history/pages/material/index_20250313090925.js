@@ -83,7 +83,6 @@ export default function Material() {
           {data.monsterdata.filter((v) => v.item.includes(select.select2)).map((item,index) => (
             <div className={`black-block monster-card ${click?.name === item.name ? 'active':''}`} key={index} data-click={item.name} onClick={()=>setClick(item)}>
               <Image
-               className="img"
                   alt="image"
                   src={`/images/${item.name}.png`}
                   width={50}

@@ -130,6 +130,7 @@ export default function Beastmaster() {
         <Select option={option.ethnicity} text="ethnicity" setSelect={setSelect} />
         <div className='d-flex flex-wrap p-1'>{data.filterdata.map((item,index)=>(
           <div className={`black-block monster-card m-3 ${click.some(v => v.name === item.name) ? 'active' : ''}`} key={index} data-click={item.name} onClick={()=>handleClick(item)}>
+              <img className="img" alt="image" src={`/images/${item.name}.png`} />
                <Image
                               className="img" alt="image" src={`/images/${item.name}.png`} 
                               width="150"
