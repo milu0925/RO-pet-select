@@ -61,6 +61,21 @@ body {
   src: url(/fonts/zpix.ttf);
 }
 
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* 使圖片容器寬度自適應 */
+  height: auto; /* 確保圖片容器高度自動調整 */
+
+  img {
+    width: 80px;  /* 設定圖片寬度 */
+    height: 80px; /* 設定圖片高度 */
+    object-fit: contain; /* 保證圖片不變形，並保持其完整性 */
+  }
+}
+
+
 // navbar
 .navbar-layout{
   display: flex;
@@ -82,6 +97,7 @@ body {
   padding: 8px 32px;
   font-size: 16px;
   border: 1px solid #ccc;
+  color: black;
   .option {
     background-color: #f0f0f0;
     color: black;
@@ -208,19 +224,6 @@ body {
   flex-direction: column;
   align-items: center; /* 將內容垂直居中 */
 
-  .material-card-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* 使圖片容器寬度自適應 */
-    height: auto; /* 確保圖片容器高度自動調整 */
-
-    img {
-      width: 80px;  /* 設定圖片寬度 */
-      height: 80px; /* 設定圖片高度 */
-      object-fit: contain; /* 保證圖片不變形，並保持其完整性 */
-    }
-  }
 
   span {
     margin-top: 8px; /* 提供一些間距，避免文字太緊 */
@@ -348,6 +351,7 @@ body {
 
 .pointer{
   cursor: pointer;
+  text-align: center;
 }
 
 .frame{
@@ -355,8 +359,12 @@ body {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
 
-.home{
-  /* From Uiverse.io by 0xnihilism */ 
+
+
+
+
+// home
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -523,7 +531,6 @@ body {
   }
 }
 
-}
 
 
 @media screen and (max-width: 768px) {
@@ -545,6 +552,10 @@ body {
   .monster-card{
     margin-bottom:18px;
     width: 150px;
+  }
+
+  .button-container{
+    flex-wrap: wrap;
   }
 
 }

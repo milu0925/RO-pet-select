@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import { getdata } from "@/actions/beastmaster";
 import { useEffect, useState } from "react";
-import Navbar from "@/component/navbar";
 import MaterialLayout from "@/component/material-layout";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -71,24 +69,17 @@ export default function Material() {
         <Slider {...settings}>
             {data.originaldata[select.select1]?.map((v,index)=>(
               <div key={index} className={`material-card black-block m-2 text-center ${select.select2 === v && 'active'}`} data-item={v} onClick={handleClick}>
-              <div className="material-card-img"><Image
-                  alt="material"
-                  src={`/images/material/${v}.png`}
-                  width={50}
-                  height={50}
-                /></div>
+              <div className="card-img">
+                <img alt="material" src={`/images/material/${v}.png`} />
+              </div>
                 <span>{v}</span>
               </div>))}
         </Slider>
           {data.monsterdata.filter((v) => v.item.includes(select.select2)).map((item,index) => (
             <div className={`black-block monster-card ${click?.name === item.name ? 'active':''}`} key={index} data-click={item.name} onClick={()=>setClick(item)}>
-              <Image
-               className="img"
-                  alt="image"
-                  src={`/images/${item.name}.png`}
-                  width={50}
-                  height={50}
-                />
+            <div className="card-img">
+              <img alt="image" src={`/images/${item.name}.png`} />
+            </div>
               <div className="prop">
                 <span>{item.property}</span>
                 <span>{item.body}</span>
@@ -97,13 +88,8 @@ export default function Material() {
               <div className="black-block title">{item.name}</div>
         </div>))}
         {click && <div className="one-monster-data ">
-            <div className="img">
-              <Image
-                src={`/images/${click.name}.png`}
-                alt="monster"
-                width="150"
-                height="150"
-              />
+            <div className="card-img">
+              <img alt="monster" src={`/images/${click.name}.png`} />
             </div>
             <div className="label">
               <div className="attr">{click.property}</div>
