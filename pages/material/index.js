@@ -61,11 +61,12 @@ export default function Material() {
         <title>RO重生 - 材料搜尋</title>
       </Head>
       <MaterialLayout>
-        <div data-name="strengthen" onClick={handleClick} className={`pointer py-2 px-5 ${select.select1 === 'strengthen' && 'frame active'}`}>強化</div>
-        <div data-name="enchant" onClick={handleClick} className={`pointer py-2 px-5 ${select.select1 === 'enchant' && 'frame active'}`}>附魔</div>
-        <div data-name="refine" onClick={handleClick} className={`pointer py-2 px-5 ${select.select1 === 'refine' && 'frame active'}`}>精煉</div>
-        <div data-name="repair" onClick={handleClick} className={`pointer py-2 px-5 ${select.select1 === 'repair' && 'frame active'}`}>修復</div>
-        <div data-name="other" onClick={handleClick} className={`pointer py-2 px-5 ${select.select1 === 'other' && 'frame active'}`}>寵物</div>
+        <div data-name="strengthen" onClick={handleClick} className={`pointer p-2 ${select.select1 === 'strengthen' && 'frame active'}`}>強化</div>
+        <div data-name="enchant" onClick={handleClick} className={`pointer p-2 ${select.select1 === 'enchant' && 'frame active'}`}>附魔</div>
+        <div data-name="refine" onClick={handleClick} className={`pointer p-2 ${select.select1 === 'refine' && 'frame active'}`}>精煉</div>
+        <div data-name="protect" onClick={handleClick} className={`pointer p-2 ${select.select1 === 'protect' && 'frame active'}`}>保護</div>
+        <div data-name="repair" onClick={handleClick} className={`pointer p-2 ${select.select1 === 'repair' && 'frame active'}`}>修復</div>
+        <div data-name="other" onClick={handleClick} className={`pointer p-2 ${select.select1 === 'other' && 'frame active'}`}>寵物</div>
         <Slider {...settings}>
             {data.originaldata[select.select1]?.map((v,index)=>(
               <div key={index} className={`material-card black-block m-2 text-center ${select.select2 === v && 'active'}`} data-item={v} onClick={handleClick}>
@@ -101,7 +102,7 @@ export default function Material() {
             </div>
             <div className="level">Lv.{click.level}</div>
             <div className="name">{click.name}</div>
-            <div className="word-arrangement p-1">
+            <div className="word-arrangement pt-4">
               <div className="fw-bold">{click.type === "special" ? "稀有" : "一般"}寵物</div>
               <div>
                 <div><small>原有素材：</small>{click.item.map((v,i)=>(<span key={i} className="px-1">{v}</span>))}</div>
