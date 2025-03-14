@@ -101,7 +101,7 @@ export default function Material() {
             </div>
             <div className="level">Lv.{click.level}</div>
             <div className="name">{click.name}</div>
-            <div className="word-arrangement px-2 py-4">
+            <div className="word-arrangement p-1">
               <div className="fw-bold">{click.type === "special" ? "稀有" : "一般"}寵物</div>
               <div>
                 <div><small>原有素材：</small>{click.item.map((v,i)=>(<span key={i} className="px-1">{v}</span>))}</div>
