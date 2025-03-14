@@ -18,7 +18,7 @@ export default function MaterialLayout({ children }) {
         </div>
         <div className="col-12 col-md-4 d-flex flex-column justify-content-between">
           <div className='block'></div>
-          <div className='monster-id'>{children[7]}</div>
+          <div>{children[7]}</div>
           <div className='px-3'>本網站由玩家自發設立，旨在提供便捷的遊戲內材料搜尋及寵物搭配參考，並非用於營利目的。所有內容皆由玩家自行翻寫和整理，網站不對資料的準確性、完整性或任何使用上的風險負責。本網站不承擔任何與遊戲內容或服務相關的法律責任。
         </div>
         </div>

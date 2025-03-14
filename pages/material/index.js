@@ -87,20 +87,28 @@ export default function Material() {
               </div>
               <div className="black-block title">{item.name}</div>
         </div>))}
-        {click && <div className="one-monster-data ">
-            <div className="card-img">
+        {click && 
+        <div className="one-monster-data row">
+       
+          <div className="col-2 prop-bg">
+            <div>{click.property}</div>
+            <div>{click.body}</div>
+            <div>{click.ethnicity}</div>
+          </div>
+          <div className="col-10">
+            <div className="one-monster-data-img">
               <img alt="monster" src={`/images/${click.name}.png`} />
             </div>
-            <div className="label">
-              <div className="attr">{click.property}</div>
-              <div className="eth">{click.body}</div>
-              <div className="shape">{click.ethnicity}</div>
+            <div className="level">Lv.{click.level}</div>
+            <div className="name">{click.name}</div>
+            <div className="word-arrangement px-2 py-4">
+              <div className="fw-bold">{click.type === "special" ? "稀有" : "一般"}寵物</div>
+              <div>
+                <div><small>原有素材：</small>{click.item.map((v)=>(<span className="px-1">{v}</span>))}</div>
+                <div><small>可換素材：</small>{click.attach.map((v)=>(v))}</div>
+              </div>
             </div>
-            <div className="label1">
-              <div className="level">Lv.{click.level}</div>
-              <div className="type">{click.type === "special" ? "稀有" : "一般"}寵物</div>
-              <div className="name">{click.name}</div>
-            </div>
+          </div>
           </div>}
     </MaterialLayout>
     </>
