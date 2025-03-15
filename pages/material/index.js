@@ -178,17 +178,17 @@ export default function Material() {
                   <div>
                     <small>原有素材：</small>
                     {click.item.map((v, i) => (
-                      <div key={i} className="font-s px-1">
+                      <span key={i} className="font-s px-1">
                         {v}
-                      </div>
+                      </span>
                     ))}
                   </div>
                   <div>
                     <small>可換素材：</small>
                     {click.attach.map((v, i) => (
-                      <div key={i} className="font-s px-1">
+                      <span key={i} className="font-s px-1">
                         {v}
-                      </div>
+                      </span>
                     ))}
                   </div>
                 </div>
