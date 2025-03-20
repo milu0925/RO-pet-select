@@ -28,7 +28,7 @@ export default function MaterialLayout({ children }) {
           <div className="font-s px-3">
             本網站由玩家自發設立，旨在提供便捷的遊戲內材料搜尋及寵物搭配參考，並非用於營利目的。所有內容皆由玩家自行翻寫和整理，網站不對資料的準確性、完整性或任何使用上的風險負責。本網站不承擔任何與遊戲內容或服務相關的法律責任，若資訊上有錯誤需要修改建議或是提供缺失的檔案部分，麻煩幫我留言在這
             <a href="https://discord.gg/35cgyE9Wrb">
-              【加入此Discord留言給我】
+              【加入此Discord留言給我(還可以附圖)】
             </a>
             ，也可以在遊戲內留言告訴我那些資訊錯誤，我是世界/雲彼的米路露。
           </div>
