@@ -175,7 +175,8 @@ export default function Beastmaster() {
           <button onClick={() => {setOpenQuestion(false)}}>
             <FaDeleteLeft />
           </button>
-          <div className="d-flex justify-content-evenly">
+          <div className="overflow-auto" style={{ maxHeight: '100%' }}>
+          <div className="d-flex justify-content-evenly flex-column flex-md-row">
             <div>
               <div>上陣兩隻同樣屬性寵物</div>
               <hr />
@@ -194,6 +195,7 @@ export default function Beastmaster() {
                 </div>
               ))}
             </div>
+          </div>
           </div>
         </div>
       ) : (
