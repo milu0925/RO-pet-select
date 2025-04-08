@@ -178,7 +178,7 @@ export default function Beastmaster() {
           <div className="overflow-auto skill-list">
           <div className="d-flex justify-content-evenly flex-column flex-md-row">
             <div>
-              <div>上陣兩隻同樣屬性寵物</div>
+              <h1>上陣兩隻同樣屬性寵物</h1>
               <hr />
               {Object.entries(skill.originalskill.two).map(([key, values], i) => (
                 <div key={i}>
@@ -187,7 +187,7 @@ export default function Beastmaster() {
               ))}
             </div>
             <div>
-              <div>上陣三隻同樣屬性寵物</div>
+              <h1>上陣三隻同樣屬性寵物</h1>
               <hr />
               {Object.entries(skill.originalskill.three).map(([key, values], i) => (
                 <div key={i}>
