@@ -203,6 +203,7 @@ body {
   > button {
     cursor: pointer;
     position: absolute;
+    color: black;
     right: -60px;
     top: -15px;
     border-radius: 50%;
@@ -212,8 +213,7 @@ body {
     }
   }
   .skill-list {
-    display: flex;
-    justify-content: space-between;
+    height: 100%;
   }
 }
 
