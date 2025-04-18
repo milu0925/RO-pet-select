@@ -3712,7 +3712,7 @@
         {
             "name": "獸人英雄",
             "property": "地",
-            "body": "大",
+            "body": "小",
             "ethnicity": "人",
             "level": 80,
             "type": "special",
@@ -4027,6 +4027,20 @@
             ]
         },
         {
+            "name": "黑暗之王",
+            "property": "不死",
+            "body": "大",
+            "ethnicity": "無形",
+            "level": 90,
+            "type": "special",
+            "item": [
+                "靈質精華"
+            ],
+            "attach": [
+                "等待有緣人提供"
+            ]
+        },
+        {
             "name": "凱美拉",
             "property": "無",
             "body": "大",
@@ -4071,7 +4085,7 @@
         {
             "name": "愛麗絲女僕",
             "property": "無",
-            "body": "中",
+            "body": "小",
             "ethnicity": "人",
             "level": 90,
             "type": "special",
@@ -4428,6 +4442,34 @@
             "type": "special",
             "item": [
                 "暮色魚"
+            ],
+            "attach": [
+                "等待有緣人提供"
+            ]
+        },
+        {
+            "name": "Froggy",
+            "property": "水",
+            "body": "中",
+            "ethnicity": "動物",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "天然鈦礦"
+            ],
+            "attach": [
+                "等待有緣人提供"
+            ]
+        },
+        {
+            "name": "路易和查理",
+            "property": "無",
+            "body": "大",
+            "ethnicity": "人",
+            "level": 0,
+            "type": "special",
+            "item": [
+                "天然鈦礦"
             ],
             "attach": [
                 "等待有緣人提供"
