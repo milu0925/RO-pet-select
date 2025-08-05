@@ -15,7 +15,6 @@ export default function Beastmaster() {
   const [data,setData] = useState({originaldata:[],filterdata:[]})
   // 顯示我選擇
   const [click,setClick] = useState([])
-  console.log(click,'dd');
   
   const handleClick = (monster) => {
     setClick(prev => {
