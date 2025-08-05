@@ -3996,7 +3996,7 @@
         {
             "name": "獸人英雄",
             "property": "地",
-            "body": "小",
+            "body": "大",
             "ethnicity": "人",
             "level": 80,
             "type": "special",
@@ -4964,7 +4964,7 @@
             ]
         },
         {
-            "name": "咩咩",
+            "name": "夏夢咩咩",
             "property": "不死",
             "body": "中",
             "ethnicity": "動物",
